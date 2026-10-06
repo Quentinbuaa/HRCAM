@@ -6,7 +6,7 @@ This repository contains the analysis code and currently available derived resul
 
 - Root-level Python scripts implement data preparation, background replacement, attribution-map scoring, analysis, and table/figure generation. The principal entry points are `prepare_pets.py`, `prepare_cub.py`, `pets_experiment.py`, `cub_experiment.py`, `make_rq1_final_artifacts.py`, and `make_rq3_artifacts.py`.
 - `results/pets_v1/` contains the available Oxford-IIIT Pet calibration, development, and holdout pair-level records, split indices, summaries, and analysis outputs.
-- `results/cub_v1/` contains the available CUB split indices, metadata, and aggregate summaries. **The complete CUB holdout pair-level records are not present in this local copy.** The file `results/rq1_v3/cub_v1_holdout_transport_own.jsonl` contains only transport-distance additions, not a replacement for those records.
+- `results/cub_v1/` contains the CUB calibration, development, and holdout pair-level records, split indices, metadata, compact score arrays, and aggregate summaries. The holdout file contains 6000 records; 2889 own-predicted-class pairs meet the validity criteria used in the paper.
 - `results/rq1_v3/`, `results/rq2_visual_cases_v1/`, and `results/rq3_v1/` contain available derived artifacts supporting the paper's RQ1–RQ3 displays. Development-stage selection files are also retained.
 - `vendor/` contains supporting model code and its original license notices.
 
@@ -30,6 +30,6 @@ python analyze.py --stage development --run cub_v1 --bootstrap 400
 python cub_experiment.py --stage holdout --run cub_v1
 ```
 
-The experiment scripts write new records under `runs/<run>/`; the archived analysis outputs here are under `results/<run>/`. The holdout stages require development-stage configuration to have been frozen first; consult the scripts before starting a new run. This repository has not yet passed a clean-environment, end-to-end reproduction check, and the missing CUB holdout records prevent a complete rebuild of every published table from archived pair-level data alone.
+The experiment scripts write new records under `runs/<run>/`; the archived analysis outputs here are under `results/<run>/`. The holdout stages require development-stage configuration to have been frozen first; consult the scripts before starting a new run. Pair-level records include the source ID, background condition, predictions, consistency outcome, validity flags, and candidate dissimilarity components. The large heatmap arrays are not hosted here; they can be regenerated from the original images, segmentation annotations, and scripts. This repository has not yet passed a clean-environment, end-to-end reproduction check.
 
 No software license has yet been assigned to the original code in this repository. The licenses and usage conditions of the source datasets and of the vendored code remain separate.
