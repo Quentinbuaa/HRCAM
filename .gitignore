@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+data/
+assets/
+runs/
+jobs/
+*.pt
+*.pth
+.github_known_hosts

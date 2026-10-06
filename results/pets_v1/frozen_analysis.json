@@ -1,0 +1,57 @@
+{
+  "normalization": {
+    "own": {
+      "minimum": [
+        0.0007226146639506518,
+        0.0002659597248329175,
+        0.028871648826475527,
+        0.0006206606062085784
+      ],
+      "maximum": [
+        0.1265891235411559,
+        2.148208551210116,
+        0.7801142579312021,
+        0.5227073986973082
+      ]
+    },
+    "fixed": {
+      "minimum": [
+        0.0007415897111349562,
+        0.0002659597248329175,
+        0.028871648826475527,
+        0.0006206606062085784
+      ],
+      "maximum": [
+        0.21506885698641323,
+        10.86540713069847,
+        1.0,
+        1.3122106111170295
+      ]
+    }
+  },
+  "learned_weights": [
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "learned_features": [
+    "d1",
+    "jsd",
+    "d3",
+    "d4_half",
+    "foreground_shift"
+  ],
+  "selection_target": "label_inconsistency",
+  "selection_mode": "fixed",
+  "development_candidate_auroc": {
+    "BRCAM": 0.7122716263493107,
+    "foreground_shift": 0.6839780455634296,
+    "learned_bounded": 0.8039848897128448
+  },
+  "selected_candidate": "learned_bounded",
+  "selection_warning": "Development-only optimization; learned score is supervised; holdout is required.",
+  "calibration_sha256": "2e9f2b7097099aadea9d5339aa40f6aba36903d26393f4e17822025afe4a22bf",
+  "development_sha256": "c0bda7205d1f0b3c0429f8174f44de5cee0daa5d5d28714064ccd5e0c5652178"
+}

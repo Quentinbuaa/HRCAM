@@ -1,0 +1,53 @@
+{
+  "scope": "Development descriptive sensitivity only; first 16 eligible sources, fixed CAM target",
+  "sources": [
+    139,
+    426,
+    1879,
+    2035,
+    2523,
+    1667,
+    5,
+    2881,
+    643,
+    1382,
+    873,
+    2674,
+    2241,
+    3192,
+    233,
+    2647
+  ],
+  "n_pairs": 48,
+  "metrics": {
+    "spatial_w1": {
+      "7_versus_14": {
+        "spearman": 0.9991315675206253,
+        "mean_absolute_difference": 0.00022035568497462627,
+        "max_absolute_difference": 0.0005677865182933534
+      },
+      "14_versus_28": {
+        "spearman": 0.9998914459400782,
+        "mean_absolute_difference": 8.12896460326342e-05,
+        "max_absolute_difference": 0.0001902959053353276
+      }
+    },
+    "BAT": {
+      "7_versus_14": {
+        "spearman": 1.0,
+        "mean_absolute_difference": 0.00011105364942089745,
+        "max_absolute_difference": 0.0002856005289627733
+      },
+      "14_versus_28": {
+        "spearman": 0.9998914459400782,
+        "mean_absolute_difference": 3.9710086449928505e-05,
+        "max_absolute_difference": 9.48138829175299e-05
+      }
+    }
+  },
+  "timing": {
+    "7": 0.0017396410112269223,
+    "14": 0.007923236000351608,
+    "28": 0.1559118040604517
+  }
+}

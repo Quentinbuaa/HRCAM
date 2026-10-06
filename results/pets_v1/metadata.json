@@ -1,0 +1,29 @@
+{
+  "dataset": "Oxford-IIIT Pet",
+  "backbone": "ImageNet-pretrained ResNet-18, frozen",
+  "head": "Multinomial logistic regression C=1, independently trained on 70% of official trainval",
+  "masks": "Ground-truth trimaps; preserve foreground and unknown boundary",
+  "source_counts": {
+    "training": 2575,
+    "calibration": 365,
+    "development": 740,
+    "holdout": 999
+  },
+  "seed": 20260911,
+  "accuracy_training": 1.0,
+  "accuracy_calibration": 0.9123287671232877,
+  "accuracy_development": 0.9094594594594595,
+  "source_hashes": {
+    "pets_experiment.py": "27e574effd873ac4076596436961a096575a47d711e8396ae5490c384df347d3",
+    "analyze.py": "cd9005943f9f8656c2f86887fb0e4c5d8f4f6d333fc2a9a637c97b766234a7c5",
+    "metrics.py": "3d9ba7e5dd84a9735ff0d866df99b9ff75fda142de340e958fb45a6427d12901",
+    "prepare.py": "d784978a11fb098d6dd91f44a2c318632f861f0017b30dffa8951447d605552e",
+    "experiment.py": "ce34b9f09f88e63316931b6463ef2db6e39046b37a610f253d6ab56aae1a8245",
+    "prepare_pets.py": "d94fb6267f9a4910d05ae7ce5f998b81e9c520430e3706668e0afd4bda3f28bb",
+    "job.py": "00af9efa8e6eacc112efd800bd1bcbca3b19cf0f5bee13979cd00858b443d3f9",
+    "test_metrics.py": "fda462edce33fec90c5e439f182c135462433d535b11b792b583b30aef28ad2a",
+    "test_experiment.py": "1801b7bcd560e2f7bf51bfd7496ed050dbd04ed0b53f7d6d31328d2dddde438e",
+    "probe.py": "095a2719e3fd31618f143700cf49a8a218939fa557247d7be627f887ea2b3c51",
+    "sam_masks.py": "a64ef5b5eb6b3bc50e33c7226018a295b9afaf699e71febffc5e8eb964cc7c61"
+  }
+}

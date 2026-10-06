@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Fusion Method & \multicolumn{4}{c}{Basic Statistic Variations} & \multicolumn{2}{c}{Discrimination Performance} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-8}
+& & $\Delta$ Median & $\Delta$ Mean & $\Delta$ Max & $\Delta$ Min & AUROC & Rank \\
+\midrule
+\multirow{7}{*}{Dataset 1} & JSD & 0.0266 & 0.0334 & 0.1092 & 0.0036 & 0.8778 & 7 \\
+ & D4/2 & 0.0332 & 0.0565 & 0.3047 & 0.0018 & 0.8816 & 6 \\
+ & min(JSD,D4/2) & 0.0244 & 0.0332 & 0.1092 & 0.0019 & 0.8929 & 4 \\
+ & max(JSD,D4/2) & 0.0353 & 0.0567 & 0.3047 & 0.0035 & 0.8848 & 5 \\
+ & Arithmetic & 0.0295 & 0.0450 & 0.1781 & 0.0026 & 0.8932 & 3 \\
+ & Geometric & 0.0295 & 0.0428 & 0.1443 & 0.0025 & 0.8948 & 2 \\
+ & \textbf{H-RCAM} & 0.0288 & 0.0408 & 0.1253 & 0.0024 & \textbf{0.8953} & \textbf{1} \\
+\midrule
+\multirow{7}{*}{Dataset 2} & JSD & 0.0186 & 0.0215 & 0.0678 & 0.0020 & 0.7796 & 7 \\
+ & D4/2 & 0.0215 & 0.0334 & 0.2721 & 0.0007 & 0.7939 & 5 \\
+ & min(JSD,D4/2) & 0.0173 & 0.0221 & 0.0678 & 0.0007 & 0.8064 & 2 \\
+ & max(JSD,D4/2) & 0.0237 & 0.0328 & 0.2721 & 0.0020 & 0.7836 & 6 \\
+ & Arithmetic & 0.0206 & 0.0275 & 0.1699 & 0.0017 & 0.7989 & 4 \\
+ & Geometric & 0.0200 & 0.0268 & 0.1416 & 0.0017 & 0.8040 & 3 \\
+ & \textbf{H-RCAM} & 0.0198 & 0.0261 & 0.1167 & 0.0017 & \textbf{0.8066} & \textbf{1} \\
+\bottomrule
+\end{tabular}
