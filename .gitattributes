@@ -1,0 +1,2 @@
+# Preserve the exact Linux analysis-script bytes recorded in summary.json.
+fixed_source_sensitivity.py text eol=lf

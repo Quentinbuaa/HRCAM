@@ -10,6 +10,7 @@ This repository contains the analysis code and derived results for the H-RCAM ma
 - `results/rq1_v3/`, `results/rq2_visual_cases_v1/`, and `results/rq3_v1/` contain available derived artifacts supporting the paper's RQ1–RQ3 displays. Development-stage selection files are also retained.
 - `results/flowers102_external_v1/`, `results/caltech101_external_v1/`, `results/voc2012_external_v1/`, and `results/uecfoodpix_external_v1/` contain the four fixed-metric external evaluations reported in RQ1.3. Each has source selection, a dataset manifest, model metadata, per-pair candidate scores and prediction outcomes, transport-candidate scores, a full aggregate summary with source-cluster bootstrap intervals, and a compact report. No original images, masks, image-containing QA sheets, checkpoints, or heatmap arrays are included.
 - The corresponding `prepare_*` and `*_experiment.py` scripts, `flowers_external_transport.py`, and `flowers_external_summary.py` reproduce the additional pipeline from legally obtained source datasets. Their frozen `*_EXTERNAL_PROTOCOL.md` files and detailed `*_EXTERNAL_VALIDATION.md` reports document the selection rules, results, and limitations.
+- `fixed_source_sensitivity.py`, `FIXED_SOURCE_SENSITIVITY_PROTOCOL.md`, and `results/fixed_source_sensitivity_20261011_v1/` contain the unchanged-metric attribution-target sensitivity analysis in RQ3.3, including matched pair-level scores and bootstrap summaries. `verify_fixed_source_release.py` checks the released point estimates without source images, heatmaps, or a GPU.
 - `vendor/` contains supporting model code and its original license notices.
 
 ## Independent validation (RQ1.3)
@@ -22,6 +23,10 @@ This repository contains the analysis code and derived results for the H-RCAM ma
 | UECFoodPixComplete, derived single-class task | 584 / 1752 | 0.7808 | 0.8351 | [Report](UECFOODPIX_EXTERNAL_VALIDATION.md) |
 
 The original Oxford-IIIT Pet and CUB-200-2011 datasets informed the choice of H-RCAM components and fusion. The four datasets above did not. The endpoint here is **change in the predicted label** under a foreground-preserving background replacement, not independently confirmed classification error. H-RCAM has the highest observed AUROC and AP among the nine individual comparison measures on all four, but the paired bootstrap AUROC advantage over JSD is not established on VOC 2012 or UECFoodPixComplete. AP values are not directly comparable across datasets with different positive-class prevalence. The VOC and UEC analyses use prespecified single-class subsets of segmentation datasets, not their full original tasks. See the reports and protocols before reusing these results.
+
+## Attribution-target sensitivity (RQ3.3)
+
+The matched-pair comparison holds the classifier, inputs, background replacements, Grad-CAM procedure, and H-RCAM formula fixed while changing only the follow-up explanation target. Own-class H-RCAM AUROC/AP are 0.8953/0.6888 on Pet and 0.8067/0.8684 on matched CUB pairs; fixed-source values are 0.7973/0.5095 and 0.7658/0.8484. Prediction-consistent scores are identical under both conventions. The primary results therefore compare explanations of actual predictions, not isolated attribution instability for one fixed class. The diagnostic results also show that H-RCAM's primary ranking above JSD does not extend to fixed-source targeting. See the [RQ3.3 report and reproduction instructions](results/fixed_source_sensitivity_20261011_v1/README.md).
 
 ## Environment and use
 

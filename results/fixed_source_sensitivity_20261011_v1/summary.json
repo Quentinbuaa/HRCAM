@@ -1,0 +1,566 @@
+{
+  "analysis": "fixed-source-class sensitivity, unchanged H-RCAM",
+  "bootstrap_repeats": 1000,
+  "bootstrap_seed": 20261011,
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "script_sha256": "23659fc1151a2635467f6606945678182ada2674b38a009831bbbb6badade2c1",
+  "datasets": [
+    {
+      "dataset": "Oxford-IIIT Pet",
+      "source_run": "pets_v1",
+      "source_role": "holdout",
+      "coverage": {
+        "all_candidate_pairs": 2997,
+        "all_source_images": 999,
+        "mask_eligible_pairs": 2979,
+        "own_valid_eligible_pairs": 2979,
+        "fixed_valid_eligible_pairs": 2979,
+        "matched_pairs": 2979,
+        "matched_sources": 993,
+        "matched_consistent": 2515,
+        "matched_inconsistent": 464,
+        "inconsistency_prevalence": 0.15575696542463915,
+        "own_only_valid_eligible_pairs": 0,
+        "fixed_only_valid_eligible_pairs": 0
+      },
+      "primary_own_class_reproduction": {
+        "auroc": 0.895304037841914,
+        "ap": 0.6887734281900854
+      },
+      "fresh_autograd_replay": {
+        "source_images": 16,
+        "background_pairs": 48,
+        "maximum_absolute_errors": {
+          "source": 0.0,
+          "black_own": 0.0,
+          "black_fixed_source": 0.0,
+          "gray_own": 0.0,
+          "gray_fixed_source": 0.0,
+          "white_own": 0.0,
+          "white_fixed_source": 0.0
+        },
+        "target": "source predicted class for both images",
+        "torch": "2.11.0+cu128",
+        "gpu": "NVIDIA GeForce RTX 5080"
+      },
+      "maximum_component_error": 1.3322676295501878e-15,
+      "consistent_pair_maximum_hrcam_difference": 0.0,
+      "group_medians": {
+        "own": {
+          "consistent": 0.009049779461596498,
+          "inconsistent": 0.03785890065855621
+        },
+        "fixed": {
+          "consistent": 0.009049779461596498,
+          "inconsistent": 0.02380224477768432
+        }
+      },
+      "backgrounds": {
+        "black": {
+          "n": 993,
+          "inconsistent": 183,
+          "ranking": {
+            "own_JSD": {
+              "auroc": 0.860419618160966,
+              "ap": 0.6471295602066491
+            },
+            "own_NCD": {
+              "auroc": 0.8626728732375363,
+              "ap": 0.694523309164603
+            },
+            "own_HRCAM": {
+              "auroc": 0.8779329420495177,
+              "ap": 0.7039886693684686
+            },
+            "fixed_JSD": {
+              "auroc": 0.830068137354112,
+              "ap": 0.6350557499524677
+            },
+            "fixed_NCD": {
+              "auroc": 0.7392430682048169,
+              "ap": 0.5031567391593946
+            },
+            "fixed_HRCAM": {
+              "auroc": 0.7920461445051609,
+              "ap": 0.5829205653004793
+            }
+          }
+        },
+        "gray": {
+          "n": 993,
+          "inconsistent": 137,
+          "ranking": {
+            "own_JSD": {
+              "auroc": 0.889138072174091,
+              "ap": 0.6259856181128416
+            },
+            "own_NCD": {
+              "auroc": 0.9008885326420629,
+              "ap": 0.6864441213046447
+            },
+            "own_HRCAM": {
+              "auroc": 0.9125537212633876,
+              "ap": 0.6897859174113803
+            },
+            "fixed_JSD": {
+              "auroc": 0.8378470564158538,
+              "ap": 0.5261218454141012
+            },
+            "fixed_NCD": {
+              "auroc": 0.7602070400436591,
+              "ap": 0.40685657531055536
+            },
+            "fixed_HRCAM": {
+              "auroc": 0.8126918616549559,
+              "ap": 0.4736821972942106
+            }
+          }
+        },
+        "white": {
+          "n": 993,
+          "inconsistent": 144,
+          "ranking": {
+            "own_JSD": {
+              "auroc": 0.8864432011516816,
+              "ap": 0.64103548449272
+            },
+            "own_NCD": {
+              "auroc": 0.8855679884831826,
+              "ap": 0.6566750348472271
+            },
+            "own_HRCAM": {
+              "auroc": 0.8988679492213061,
+              "ap": 0.6767952041535361
+            },
+            "fixed_JSD": {
+              "auroc": 0.8140704750687083,
+              "ap": 0.51558862781216
+            },
+            "fixed_NCD": {
+              "auroc": 0.7378615364481089,
+              "ap": 0.39384055728765943
+            },
+            "fixed_HRCAM": {
+              "auroc": 0.7879613270514331,
+              "ap": 0.45810705065671803
+            }
+          }
+        }
+      },
+      "ranking": {
+        "own_JSD": {
+          "auroc": 0.8778330019880715,
+          "ap": 0.635390904138907,
+          "auroc_ci95": [
+            0.855029501927545,
+            0.8986834266971291
+          ],
+          "ap_ci95": [
+            0.5755345734634385,
+            0.693505426769171
+          ]
+        },
+        "own_NCD": {
+          "auroc": 0.8816189072461782,
+          "ap": 0.6776644107893142,
+          "auroc_ci95": [
+            0.8605858710949221,
+            0.9049276151902036
+          ],
+          "ap_ci95": [
+            0.6248140171823999,
+            0.7299133638914791
+          ]
+        },
+        "own_HRCAM": {
+          "auroc": 0.895304037841914,
+          "ap": 0.6887734281900854,
+          "auroc_ci95": [
+            0.8753158133762596,
+            0.9154697112690974
+          ],
+          "ap_ci95": [
+            0.6348604583011555,
+            0.7422583295110855
+          ]
+        },
+        "fixed_JSD": {
+          "auroc": 0.8278261465688626,
+          "ap": 0.5643142833819749,
+          "auroc_ci95": [
+            0.7990341908201332,
+            0.8528379942157417
+          ],
+          "ap_ci95": [
+            0.5012012112575929,
+            0.6196220196363589
+          ]
+        },
+        "fixed_NCD": {
+          "auroc": 0.7456613765681771,
+          "ap": 0.438005548447852,
+          "auroc_ci95": [
+            0.7111048795738096,
+            0.7782825153466184
+          ],
+          "ap_ci95": [
+            0.3729319329772135,
+            0.5009698069048488
+          ]
+        },
+        "fixed_HRCAM": {
+          "auroc": 0.7972981079042983,
+          "ap": 0.5095241765313248,
+          "auroc_ci95": [
+            0.7672520025405417,
+            0.824759138586619
+          ],
+          "ap_ci95": [
+            0.4436622944148261,
+            0.5696390988731261
+          ]
+        }
+      },
+      "paired_differences": {
+        "fixed_HRCAM_minus_own_HRCAM": {
+          "auroc": {
+            "difference": -0.0980059299376157,
+            "ci95": [
+              -0.12697045142416843,
+              -0.0738444852589713
+            ]
+          },
+          "ap": {
+            "difference": -0.1792492516587606,
+            "ci95": [
+              -0.23079128866718962,
+              -0.1312534379923173
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_JSD": {
+          "auroc": {
+            "difference": -0.030528038664564217,
+            "ci95": [
+              -0.04573265514785299,
+              -0.015155690096350233
+            ]
+          },
+          "ap": {
+            "difference": -0.05479010685065011,
+            "ci95": [
+              -0.08191833028764241,
+              -0.029098959425953985
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_NCD": {
+          "auroc": {
+            "difference": 0.05163673133612123,
+            "ci95": [
+              0.0412137797660259,
+              0.06247040547872444
+            ]
+          },
+          "ap": {
+            "difference": 0.07151862808347276,
+            "ci95": [
+              0.054056673739091406,
+              0.08783188406172361
+            ]
+          }
+        }
+      },
+      "successful_resamples": 1000,
+      "original_file_sha256": {
+        "classifier.pt": "f3edfdb3b780e21a407a1aefec16634aef331fddaaacad0064d828f998d6e50c",
+        "holdout_records.jsonl": "88efda909786478419329fc4b1ffafcf995238d7007f1b90fe141c2fd30af0fd",
+        "splits.json": "0f47c01d9daab457bc2c70b5965b68bf05ffa75c1b06601ad13a1452c2e05939",
+        "holdout_heatmaps.npz": "2b8ad1c0abbcbfca68313119b512b0309e0668ceb1e591b3a5dfe280d688e7bc"
+      }
+    },
+    {
+      "dataset": "CUB-200-2011",
+      "source_run": "cub_v1",
+      "source_role": "holdout",
+      "coverage": {
+        "all_candidate_pairs": 3000,
+        "all_source_images": 1000,
+        "mask_eligible_pairs": 2889,
+        "own_valid_eligible_pairs": 2889,
+        "fixed_valid_eligible_pairs": 2887,
+        "matched_pairs": 2887,
+        "matched_sources": 963,
+        "matched_consistent": 1061,
+        "matched_inconsistent": 1826,
+        "inconsistency_prevalence": 0.6324904745410461,
+        "own_only_valid_eligible_pairs": 2,
+        "fixed_only_valid_eligible_pairs": 0
+      },
+      "primary_own_class_reproduction": {
+        "auroc": 0.806606623947929,
+        "ap": 0.8684202740450485
+      },
+      "fresh_autograd_replay": {
+        "source_images": 16,
+        "background_pairs": 48,
+        "maximum_absolute_errors": {
+          "source": 0.0,
+          "black_own": 0.0,
+          "black_fixed_source": 0.0,
+          "gray_own": 0.0,
+          "gray_fixed_source": 0.0,
+          "white_own": 0.0,
+          "white_fixed_source": 0.0
+        },
+        "target": "source predicted class for both images",
+        "torch": "2.11.0+cu128",
+        "gpu": "NVIDIA GeForce RTX 5080"
+      },
+      "maximum_component_error": 1.1102230246251565e-15,
+      "consistent_pair_maximum_hrcam_difference": 0.0,
+      "group_medians": {
+        "own": {
+          "consistent": 0.013429704536533763,
+          "inconsistent": 0.033264743743729605
+        },
+        "fixed": {
+          "consistent": 0.013429704536533763,
+          "inconsistent": 0.029224565497561424
+        }
+      },
+      "backgrounds": {
+        "black": {
+          "n": 962,
+          "inconsistent": 693,
+          "ranking": {
+            "own_JSD": {
+              "auroc": 0.7657509776468883,
+              "ap": 0.8804084887620878
+            },
+            "own_NCD": {
+              "auroc": 0.7738618259064356,
+              "ap": 0.8844172032601664
+            },
+            "own_HRCAM": {
+              "auroc": 0.7853736515446552,
+              "ap": 0.8912687973702442
+            },
+            "fixed_JSD": {
+              "auroc": 0.807887692646057,
+              "ap": 0.9141689533969429
+            },
+            "fixed_NCD": {
+              "auroc": 0.7260335698997409,
+              "ap": 0.866787526229658
+            },
+            "fixed_HRCAM": {
+              "auroc": 0.7679610765112623,
+              "ap": 0.8920784341434064
+            }
+          }
+        },
+        "gray": {
+          "n": 963,
+          "inconsistent": 552,
+          "ranking": {
+            "own_JSD": {
+              "auroc": 0.7985736450509539,
+              "ap": 0.8365882810666005
+            },
+            "own_NCD": {
+              "auroc": 0.8076668782397123,
+              "ap": 0.8387246549789065
+            },
+            "own_HRCAM": {
+              "auroc": 0.824138721393561,
+              "ap": 0.8534850538052849
+            },
+            "fixed_JSD": {
+              "auroc": 0.7753799499277125,
+              "ap": 0.8347711634121172
+            },
+            "fixed_NCD": {
+              "auroc": 0.7257792940512712,
+              "ap": 0.768482372790174
+            },
+            "fixed_HRCAM": {
+              "auroc": 0.7603803025494552,
+              "ap": 0.8075103274441153
+            }
+          }
+        },
+        "white": {
+          "n": 962,
+          "inconsistent": 581,
+          "ranking": {
+            "own_JSD": {
+              "auroc": 0.7742465926698922,
+              "ap": 0.8339572192881746
+            },
+            "own_NCD": {
+              "auroc": 0.7923482456259232,
+              "ap": 0.8484498192031837
+            },
+            "own_HRCAM": {
+              "auroc": 0.802833380767163,
+              "ap": 0.8581574414340059
+            },
+            "fixed_JSD": {
+              "auroc": 0.779066773279846,
+              "ap": 0.854087797086222
+            },
+            "fixed_NCD": {
+              "auroc": 0.7239080054752194,
+              "ap": 0.7983797002960787
+            },
+            "fixed_HRCAM": {
+              "auroc": 0.7576176471916914,
+              "ap": 0.831337693956529
+            }
+          }
+        }
+      },
+      "ranking": {
+        "own_JSD": {
+          "auroc": 0.7797439436436518,
+          "ap": 0.8491625107561367,
+          "auroc_ci95": [
+            0.7559505079832457,
+            0.8015033005517658
+          ],
+          "ap_ci95": [
+            0.8263167090702915,
+            0.8700889963343991
+          ]
+        },
+        "own_NCD": {
+          "auroc": 0.7939698129335094,
+          "ap": 0.8584757263692364,
+          "auroc_ci95": [
+            0.7716858112658594,
+            0.8141817242719681
+          ],
+          "ap_ci95": [
+            0.8372697004350041,
+            0.8784235256413654
+          ]
+        },
+        "own_HRCAM": {
+          "auroc": 0.8066652695952174,
+          "ap": 0.868353288499206,
+          "auroc_ci95": [
+            0.7843480426361296,
+            0.8259627348207061
+          ],
+          "ap_ci95": [
+            0.8473614436588659,
+            0.8873496548981445
+          ]
+        },
+        "fixed_JSD": {
+          "auroc": 0.7894430949743624,
+          "ap": 0.8712433433389254,
+          "auroc_ci95": [
+            0.7661439102944363,
+            0.8074361004144768
+          ],
+          "ap_ci95": [
+            0.851497151340046,
+            0.8873113171760952
+          ]
+        },
+        "fixed_NCD": {
+          "auroc": 0.7292976206083867,
+          "ap": 0.8164021934524435,
+          "auroc_ci95": [
+            0.704664671835652,
+            0.7512470522967412
+          ],
+          "ap_ci95": [
+            0.7915375421731748,
+            0.839886845472915
+          ]
+        },
+        "fixed_HRCAM": {
+          "auroc": 0.7657844126054385,
+          "ap": 0.8483980736432873,
+          "auroc_ci95": [
+            0.7424767766108971,
+            0.7853932967613728
+          ],
+          "ap_ci95": [
+            0.8266380369943102,
+            0.8680513036793837
+          ]
+        }
+      },
+      "paired_differences": {
+        "fixed_HRCAM_minus_own_HRCAM": {
+          "auroc": {
+            "difference": -0.040880856989778946,
+            "ci95": [
+              -0.05359377373492891,
+              -0.027398993392686127
+            ]
+          },
+          "ap": {
+            "difference": -0.019955214855918668,
+            "ci95": [
+              -0.02948408022809195,
+              -0.010709868163704308
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_JSD": {
+          "auroc": {
+            "difference": -0.023658682368923878,
+            "ci95": [
+              -0.034903423956453836,
+              -0.012031261058882607
+            ]
+          },
+          "ap": {
+            "difference": -0.02284526969563805,
+            "ci95": [
+              -0.03103016557333643,
+              -0.014782910467494043
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_NCD": {
+          "auroc": {
+            "difference": 0.03648679199705185,
+            "ci95": [
+              0.028947625327399848,
+              0.043461174238560725
+            ]
+          },
+          "ap": {
+            "difference": 0.03199588019084387,
+            "ci95": [
+              0.024968241010486204,
+              0.038756453790193365
+            ]
+          }
+        }
+      },
+      "successful_resamples": 1000,
+      "original_file_sha256": {
+        "classifier.pt": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18",
+        "holdout_records.jsonl": "f8d8e1d4fdefbb56a23ff6b15dd809d4b1dd63967e0ed72008935d77b6d282d9",
+        "splits.json": "f77dbd09430ed13bab246f0a763c3ef97ae2144bbed36277c916b0a5d5c714c9",
+        "holdout_heatmaps.npz": "044fd9f5aa59178ca17d7d812c12f13eeff25b268891100ace35517fc9fa4eed"
+      }
+    }
+  ]
+}
