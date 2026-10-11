@@ -1,0 +1,43 @@
+{
+  "source": {
+    "102flowers.tgz": {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz",
+      "bytes": 344862509,
+      "sha256": "2d01ecc807db462958cfe3d92f57a8c252b4abd240eb955770201e45f783b246"
+    },
+    "102segmentations.tgz": {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/102segmentations.tgz",
+      "bytes": 203577493,
+      "sha256": "6808f69f3cdb4cd38cb54b9fdbcb126856cff40c50d519ce811ffd31936ef8c6"
+    },
+    "imagelabels.mat": {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat",
+      "bytes": 502,
+      "sha256": "4903e94206bac23bf772aadf06451916df56b58fc483a62db32a97b82656651d"
+    },
+    "setid.mat": {
+      "url": "https://www.robots.ox.ac.uk/~vgg/data/flowers/102/setid.mat",
+      "bytes": 14989,
+      "sha256": "46b8678f91fd95d3c8f4feab80d271a6c834a1dd896fe29fd3e6ad9ce5c8dccd"
+    }
+  },
+  "prepared": {
+    "trainval": {
+      "count": 2040,
+      "sha256": "827d9b1469897136119c62c955bad04f203d595130a1409a44e6e90aa81d6ad9",
+      "mask_area_min": null,
+      "mask_area_median": null,
+      "mask_area_max": null,
+      "mask_area_ineligible": 0
+    },
+    "test_selected": {
+      "count": 1020,
+      "sha256": "c880b67cf3e909ce405e463115f43bbe35059185589cdbaaba747593d6e01ecc",
+      "mask_area_min": 0.0,
+      "mask_area_median": 0.3443578603316326,
+      "mask_area_max": 1.0,
+      "mask_area_ineligible": 33
+    }
+  },
+  "segmentation_decoding": "RGB Euclidean distance from (0,0,255) >= 110"
+}

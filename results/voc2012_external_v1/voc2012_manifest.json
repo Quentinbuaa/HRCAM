@@ -1,0 +1,63 @@
+{
+  "source": "PASCAL VOC 2012 original trainval archive",
+  "url": "https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2012/",
+  "archive_md5": "6cd6e144f989b92b3379bac3b3de84fd",
+  "archive_sha256": "e14f763270cf193d0b5f74b169f44157a4b0c6efa708f4dd0ff78ee691763bcb",
+  "manifest": "data/voc2012_selected_ids.json",
+  "prepared": {
+    "train": {
+      "sources": 933,
+      "mask_area_ineligible": null,
+      "sha256": "77abab9a4d1016a03bf6dca21ccb97a5369b527d87e5814fb1c72adc2a8c55c1",
+      "class_counts": {
+        "tvmonitor": 29,
+        "bird": 93,
+        "boat": 53,
+        "aeroplane": 80,
+        "train": 66,
+        "cat": 97,
+        "dog": 75,
+        "bus": 38,
+        "motorbike": 35,
+        "cow": 45,
+        "sheep": 51,
+        "bottle": 26,
+        "horse": 36,
+        "diningtable": 4,
+        "person": 75,
+        "pottedplant": 30,
+        "car": 49,
+        "sofa": 18,
+        "chair": 18,
+        "bicycle": 15
+      }
+    },
+    "val": {
+      "sources": 927,
+      "mask_area_ineligible": 93,
+      "sha256": "6b6becc62e784716dac205c9f5881ae17c9dcadb9201663f0a443a4ed547b032",
+      "class_counts": {
+        "aeroplane": 73,
+        "train": 68,
+        "boat": 50,
+        "sheep": 52,
+        "tvmonitor": 28,
+        "person": 61,
+        "horse": 44,
+        "cow": 56,
+        "bicycle": 29,
+        "dog": 81,
+        "bird": 94,
+        "car": 45,
+        "sofa": 21,
+        "cat": 89,
+        "motorbike": 23,
+        "pottedplant": 24,
+        "bus": 34,
+        "bottle": 35,
+        "diningtable": 5,
+        "chair": 15
+      }
+    }
+  }
+}

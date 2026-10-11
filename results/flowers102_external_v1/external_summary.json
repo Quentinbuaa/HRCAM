@@ -1,0 +1,234 @@
+{
+  "protocol": "FLOWERS102_EXTERNAL_PROTOCOL.md",
+  "run": "flowers102_external_v1",
+  "all_sources": 1020,
+  "all_own_mode_pairs": 3060,
+  "mask_eligible_pairs": 2961,
+  "valid_cam_pairs": 3060,
+  "analyzed_pairs": 2961,
+  "analyzed_sources": 987,
+  "inconsistent_pairs": 1382,
+  "prevalence": 0.4667342114150625,
+  "clean_source_accuracy": 0.8754901960784314,
+  "methods": {
+    "H-RCAM": {
+      "auroc": 0.8361371070554281,
+      "ap": 0.8078370883702946,
+      "median_consistent": 0.021759377662916662,
+      "median_inconsistent": 0.06967424733832908
+    },
+    "NCD": {
+      "auroc": 0.8173292921109094,
+      "ap": 0.79328084324721,
+      "median_consistent": 0.03236879435743134,
+      "median_inconsistent": 0.1183366278571649
+    },
+    "JSD": {
+      "auroc": 0.8229511982982141,
+      "ap": 0.7827726147137739,
+      "median_consistent": 0.01792437468695885,
+      "median_inconsistent": 0.0509729621331968
+    },
+    "D1": {
+      "auroc": 0.7449676424196375,
+      "ap": 0.7223324628077545,
+      "median_consistent": 0.0270680207214811,
+      "median_inconsistent": 0.051983703423913494
+    },
+    "D2": {
+      "auroc": 0.7719022004621071,
+      "ap": 0.685705103244509,
+      "median_consistent": 0.06449322944523721,
+      "median_inconsistent": 0.18963076059101652
+    },
+    "D3": {
+      "auroc": 0.7836597197845456,
+      "ap": 0.7537452406363037,
+      "median_consistent": 0.30128639133378465,
+      "median_inconsistent": 0.5499204636010295
+    },
+    "Foreground shift": {
+      "auroc": 0.6440945697372076,
+      "ap": 0.6267488955413089,
+      "median_consistent": 0.03052769284988699,
+      "median_inconsistent": 0.05410157541674948
+    },
+    "Background increase": {
+      "auroc": 0.5082142703299182,
+      "ap": 0.5202776635515176,
+      "median_consistent": 0.0,
+      "median_inconsistent": 0.0
+    },
+    "BAT": {
+      "auroc": 0.7394845883333074,
+      "ap": 0.6976884493037493,
+      "median_consistent": 0.033151159538144494,
+      "median_inconsistent": 0.0581871251918417
+    },
+    "SpatialW1": {
+      "auroc": 0.7968584597590114,
+      "ap": 0.7616120255472165,
+      "median_consistent": 0.03214056485561643,
+      "median_inconsistent": 0.06007628876842727
+    }
+  },
+  "transport_status": "complete",
+  "fusion_ablation": {
+    "Minimum": {
+      "auroc": 0.8303593932300665,
+      "ap": 0.7941996614477638,
+      "median_consistent": 0.016590265346238496,
+      "median_inconsistent": 0.050427513678716944
+    },
+    "Maximum": {
+      "auroc": 0.8187842604957065,
+      "ap": 0.7933605367025421,
+      "median_consistent": 0.03480345597918877,
+      "median_inconsistent": 0.11843616672589707
+    },
+    "Arithmetic": {
+      "auroc": 0.828088726034265,
+      "ap": 0.8028076073719683,
+      "median_consistent": 0.02608315214123392,
+      "median_inconsistent": 0.08520856452467737
+    },
+    "Geometric": {
+      "auroc": 0.8339209725329464,
+      "ap": 0.8081521205559559,
+      "median_consistent": 0.023787663321194096,
+      "median_inconsistent": 0.0777232047279909
+    }
+  },
+  "by_background": {
+    "black": {
+      "pairs": 987,
+      "inconsistent": 520,
+      "prevalence": 0.5268490374873354,
+      "H-RCAM": {
+        "auroc": 0.8307198155163894,
+        "ap": 0.8384291306568817,
+        "median_consistent": 0.021073230200843188,
+        "median_inconsistent": 0.06804064971365899
+      },
+      "NCD": {
+        "auroc": 0.8145939713391533,
+        "ap": 0.8280108904636685,
+        "median_consistent": 0.030703218071693572,
+        "median_inconsistent": 0.11380955155201325
+      },
+      "JSD": {
+        "auroc": 0.8170070828529072,
+        "ap": 0.815089689681734,
+        "median_consistent": 0.017627241293530802,
+        "median_inconsistent": 0.05071744565880566
+      }
+    },
+    "gray": {
+      "pairs": 987,
+      "inconsistent": 350,
+      "prevalence": 0.3546099290780142,
+      "H-RCAM": {
+        "auroc": 0.85809822830231,
+        "ap": 0.7659032960601068,
+        "median_consistent": 0.02107591538108988,
+        "median_inconsistent": 0.07570769023699439
+      },
+      "NCD": {
+        "auroc": 0.8398744113029826,
+        "ap": 0.7485696765274141,
+        "median_consistent": 0.03207153617822012,
+        "median_inconsistent": 0.12402451307170473
+      },
+      "JSD": {
+        "auroc": 0.8436331015922853,
+        "ap": 0.730436443887766,
+        "median_consistent": 0.0172177856663025,
+        "median_inconsistent": 0.055311525809057106
+      }
+    },
+    "white": {
+      "pairs": 987,
+      "inconsistent": 512,
+      "prevalence": 0.5187436676798379,
+      "H-RCAM": {
+        "auroc": 0.8183100328947368,
+        "ap": 0.8152126877432364,
+        "median_consistent": 0.023288461915019782,
+        "median_inconsistent": 0.06816152187039616
+      },
+      "NCD": {
+        "auroc": 0.8006414473684211,
+        "ap": 0.8033796618838975,
+        "median_consistent": 0.035426465789534234,
+        "median_inconsistent": 0.11335638510763363
+      },
+      "JSD": {
+        "auroc": 0.8055139802631578,
+        "ap": 0.7965929128870093,
+        "median_consistent": 0.019383277468991284,
+        "median_inconsistent": 0.04942750962610411
+      }
+    }
+  },
+  "H-RCAM_group_tests": {
+    "mann_whitney_u": 357578.0,
+    "mann_whitney_p": 3.126283293239715e-219,
+    "rank_effect_AU": 0.8361371070554281,
+    "ks_statistic": 0.501623148982347,
+    "ks_p": 3.473412906705926e-169
+  },
+  "source_cluster_bootstrap": {
+    "seed": 20261012,
+    "requested_replicates": 1000,
+    "valid_replicates": 1000,
+    "auroc_intervals": {
+      "H-RCAM": [
+        0.8165021588089789,
+        0.8362921068821718,
+        0.8531041996000018
+      ],
+      "NCD": [
+        0.7965361279407541,
+        0.8172333341636516,
+        0.8353058641293458
+      ],
+      "JSD": [
+        0.8022920292359166,
+        0.8225744657691858,
+        0.840904699244555
+      ],
+      "Arithmetic": [
+        0.8079253811999699,
+        0.8280060076635456,
+        0.8459421934175672
+      ],
+      "Geometric": [
+        0.8139686328745728,
+        0.8338388960321963,
+        0.8509145449425783
+      ]
+    },
+    "paired_auroc_difference_intervals": {
+      "H-RCAM minus NCD": [
+        0.009747594420692025,
+        0.01888957787802914,
+        0.02787695198768128
+      ],
+      "H-RCAM minus JSD": [
+        0.0068393048845853425,
+        0.013084916580632766,
+        0.019254043732549672
+      ],
+      "H-RCAM minus Arithmetic": [
+        0.002718891044201685,
+        0.008044294147581177,
+        0.013265682546385453
+      ],
+      "H-RCAM minus Geometric": [
+        -0.00044773954868297937,
+        0.0022647507302929193,
+        0.004846042186311721
+      ]
+    }
+  }
+}
