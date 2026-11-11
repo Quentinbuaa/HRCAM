@@ -1,3 +1,6 @@
+# Preserve the exact Linux analysis-script bytes recorded in summary.json.
+fixed_source_sensitivity.py text eol=lf
+
 # Frozen revision artifacts retain exact bytes for SHA-256 verification.
 /results/background_probe_ci_20261109_v1/** -text
 /results/natural_background_20261104_v1_retry1/** -text
