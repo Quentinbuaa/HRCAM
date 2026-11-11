@@ -1,0 +1,1406 @@
+{
+  "pets_v1": {
+    "coverage": {
+      "own": {
+        "all_pairs": 2997,
+        "mask_eligible_pairs": 2979,
+        "mask_eligible_sources": 993,
+        "valid_pairs": 2979,
+        "valid_sources": 993,
+        "invalid_pairs": 0,
+        "invalid_consistent": 0,
+        "invalid_inconsistent": 0,
+        "by_source_correctness": {
+          "True": {
+            "eligible_pairs": 2607,
+            "valid_pairs": 2607,
+            "eligible_sources": 869,
+            "valid_sources": 869
+          },
+          "False": {
+            "eligible_pairs": 372,
+            "valid_pairs": 372,
+            "eligible_sources": 124,
+            "valid_sources": 124
+          }
+        }
+      },
+      "fixed": {
+        "all_pairs": 2997,
+        "mask_eligible_pairs": 2979,
+        "mask_eligible_sources": 993,
+        "valid_pairs": 2979,
+        "valid_sources": 993,
+        "invalid_pairs": 0,
+        "invalid_consistent": 0,
+        "invalid_inconsistent": 0,
+        "by_source_correctness": {
+          "True": {
+            "eligible_pairs": 2607,
+            "valid_pairs": 2607,
+            "eligible_sources": 869,
+            "valid_sources": 869
+          },
+          "False": {
+            "eligible_pairs": 372,
+            "valid_pairs": 372,
+            "eligible_sources": 124,
+            "valid_sources": 124
+          }
+        }
+      },
+      "ground_truth": {
+        "all_pairs": 2997,
+        "mask_eligible_pairs": 2979,
+        "mask_eligible_sources": 993,
+        "valid_pairs": 2979,
+        "valid_sources": 993,
+        "invalid_pairs": 0,
+        "invalid_consistent": 0,
+        "invalid_inconsistent": 0,
+        "by_source_correctness": {
+          "True": {
+            "eligible_pairs": 2607,
+            "valid_pairs": 2607,
+            "eligible_sources": 869,
+            "valid_sources": 869
+          },
+          "False": {
+            "eligible_pairs": 372,
+            "valid_pairs": 372,
+            "eligible_sources": 124,
+            "valid_sources": 124
+          }
+        },
+        "invalid_source_map_sources": 0,
+        "invalid_followup_pairs": 0
+      }
+    },
+    "three_way_common": {
+      "state": "complete",
+      "n_pairs": 2979,
+      "n_sources": 993,
+      "n_inconsistent": 464,
+      "prevalence": 0.15575696542463915,
+      "ranking": {
+        "own_HRCAM": {
+          "auroc": 0.895304037841914,
+          "ap": 0.6887734281900854,
+          "auroc_ci95": [
+            0.8753158133762596,
+            0.9154697112690974
+          ],
+          "ap_ci95": [
+            0.6348604583011555,
+            0.7422583295110855
+          ]
+        },
+        "own_JSD": {
+          "auroc": 0.8778330019880715,
+          "ap": 0.635390904138907,
+          "auroc_ci95": [
+            0.855029501927545,
+            0.8986834266971291
+          ],
+          "ap_ci95": [
+            0.5755345734634385,
+            0.693505426769171
+          ]
+        },
+        "own_NCD": {
+          "auroc": 0.8816189072461782,
+          "ap": 0.6776644107893142,
+          "auroc_ci95": [
+            0.8605858710949221,
+            0.9049276151902036
+          ],
+          "ap_ci95": [
+            0.6248140171823999,
+            0.7299133638914791
+          ]
+        },
+        "fixed_HRCAM": {
+          "auroc": 0.7972981079042983,
+          "ap": 0.5095241765313248,
+          "auroc_ci95": [
+            0.7672520025405417,
+            0.824759138586619
+          ],
+          "ap_ci95": [
+            0.4436622944148261,
+            0.5696390988731261
+          ]
+        },
+        "fixed_JSD": {
+          "auroc": 0.8278261465688626,
+          "ap": 0.5643142833819749,
+          "auroc_ci95": [
+            0.7990341908201332,
+            0.8528379942157417
+          ],
+          "ap_ci95": [
+            0.5012012112575929,
+            0.6196220196363589
+          ]
+        },
+        "fixed_NCD": {
+          "auroc": 0.7456613765681771,
+          "ap": 0.438005548447852,
+          "auroc_ci95": [
+            0.7111048795738096,
+            0.7782825153466184
+          ],
+          "ap_ci95": [
+            0.3729319329772135,
+            0.5009698069048488
+          ]
+        },
+        "ground_truth_HRCAM": {
+          "auroc": 0.7649928018098308,
+          "ap": 0.4111092532317949,
+          "auroc_ci95": [
+            0.7325558120809128,
+            0.7962178171898786
+          ],
+          "ap_ci95": [
+            0.3472343129181746,
+            0.4742261984107567
+          ]
+        },
+        "ground_truth_JSD": {
+          "auroc": 0.7984241105093577,
+          "ap": 0.4460644510935956,
+          "auroc_ci95": [
+            0.7689710826047996,
+            0.8255768520110264
+          ],
+          "ap_ci95": [
+            0.38039674360087433,
+            0.5072978916013605
+          ]
+        },
+        "ground_truth_NCD": {
+          "auroc": 0.7155540892575581,
+          "ap": 0.36333070046515287,
+          "auroc_ci95": [
+            0.6796696293537927,
+            0.750341040695045
+          ],
+          "ap_ci95": [
+            0.30521910728288565,
+            0.4253133600209334
+          ]
+        }
+      },
+      "paired_differences": {
+        "ground_truth_HRCAM_minus_own_HRCAM": {
+          "auroc": {
+            "difference": -0.13031123603208328,
+            "ci95": [
+              -0.16296834036667715,
+              -0.0997928124846919
+            ]
+          },
+          "ap": {
+            "difference": -0.27766417495829043,
+            "ci95": [
+              -0.33644555522100467,
+              -0.21580998811792343
+            ]
+          }
+        },
+        "ground_truth_HRCAM_minus_fixed_HRCAM": {
+          "auroc": {
+            "difference": -0.03230530609446758,
+            "ci95": [
+              -0.058936797912983556,
+              -0.0024816356295619133
+            ]
+          },
+          "ap": {
+            "difference": -0.09841492329952983,
+            "ci95": [
+              -0.14569542739206012,
+              -0.0422999823310135
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_own_HRCAM": {
+          "auroc": {
+            "difference": -0.0980059299376157,
+            "ci95": [
+              -0.12697045142416843,
+              -0.0738444852589713
+            ]
+          },
+          "ap": {
+            "difference": -0.1792492516587606,
+            "ci95": [
+              -0.23079128866718962,
+              -0.1312534379923173
+            ]
+          }
+        },
+        "own_HRCAM_minus_own_JSD": {
+          "auroc": {
+            "difference": 0.017471035853842576,
+            "ci95": [
+              0.00855851564205635,
+              0.027861792354919323
+            ]
+          },
+          "ap": {
+            "difference": 0.05338252405117838,
+            "ci95": [
+              0.03568320039833052,
+              0.07398953041392602
+            ]
+          }
+        },
+        "own_HRCAM_minus_own_NCD": {
+          "auroc": {
+            "difference": 0.01368513059573584,
+            "ci95": [
+              0.005646555981986601,
+              0.02172572639532541
+            ]
+          },
+          "ap": {
+            "difference": 0.011109017400771193,
+            "ci95": [
+              -0.007998779744700629,
+              0.02981508017470453
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_JSD": {
+          "auroc": {
+            "difference": -0.030528038664564217,
+            "ci95": [
+              -0.04573265514785299,
+              -0.015155690096350233
+            ]
+          },
+          "ap": {
+            "difference": -0.05479010685065011,
+            "ci95": [
+              -0.08191833028764241,
+              -0.029098959425953985
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_NCD": {
+          "auroc": {
+            "difference": 0.05163673133612123,
+            "ci95": [
+              0.0412137797660259,
+              0.06247040547872444
+            ]
+          },
+          "ap": {
+            "difference": 0.07151862808347276,
+            "ci95": [
+              0.054056673739091406,
+              0.08783188406172361
+            ]
+          }
+        },
+        "ground_truth_HRCAM_minus_ground_truth_JSD": {
+          "auroc": {
+            "difference": -0.03343130869952693,
+            "ci95": [
+              -0.04901855115416773,
+              -0.018061728395061878
+            ]
+          },
+          "ap": {
+            "difference": -0.03495519786180068,
+            "ci95": [
+              -0.05747929941621644,
+              -0.01575003264658338
+            ]
+          }
+        },
+        "ground_truth_HRCAM_minus_ground_truth_NCD": {
+          "auroc": {
+            "difference": 0.04943871255227261,
+            "ci95": [
+              0.03916091926926615,
+              0.059374083923225435
+            ]
+          },
+          "ap": {
+            "difference": 0.04777855276664206,
+            "ci95": [
+              0.031502129828709174,
+              0.0657998665350889
+            ]
+          }
+        }
+      },
+      "group_median_gaps": {
+        "own": {
+          "difference": 0.02880912119695938,
+          "ci95": [
+            0.024428246757814017,
+            0.033527682876319694
+          ]
+        },
+        "fixed": {
+          "difference": 0.014752465316087371,
+          "ci95": [
+            0.011626923768183398,
+            0.017773880529341844
+          ]
+        },
+        "ground_truth": {
+          "difference": 0.013078397377500987,
+          "ci95": [
+            0.010372642959605955,
+            0.016343981907039288
+          ]
+        }
+      },
+      "bootstrap_seed": 20261011,
+      "bootstrap_resamples": 1000
+    },
+    "two_way_original_Table8_reproduction": {
+      "state": "complete",
+      "n_pairs": 2979,
+      "n_sources": 993,
+      "n_inconsistent": 464,
+      "prevalence": 0.15575696542463915,
+      "ranking": {
+        "own_HRCAM": {
+          "auroc": 0.895304037841914,
+          "ap": 0.6887734281900854
+        },
+        "own_JSD": {
+          "auroc": 0.8778330019880715,
+          "ap": 0.635390904138907
+        },
+        "own_NCD": {
+          "auroc": 0.8816189072461782,
+          "ap": 0.6776644107893142
+        },
+        "fixed_HRCAM": {
+          "auroc": 0.7972981079042983,
+          "ap": 0.5095241765313248
+        },
+        "fixed_JSD": {
+          "auroc": 0.8278261465688626,
+          "ap": 0.5643142833819749
+        },
+        "fixed_NCD": {
+          "auroc": 0.7456613765681771,
+          "ap": 0.438005548447852
+        }
+      }
+    },
+    "all_valid_by_convention": {
+      "own": {
+        "state": "complete",
+        "n_pairs": 2979,
+        "n_sources": 993,
+        "n_inconsistent": 464,
+        "prevalence": 0.15575696542463915,
+        "ranking": {
+          "HRCAM": {
+            "auroc": 0.895304037841914,
+            "ap": 0.6887734281900854
+          },
+          "JSD": {
+            "auroc": 0.8778330019880715,
+            "ap": 0.635390904138907
+          },
+          "NCD": {
+            "auroc": 0.8816189072461782,
+            "ap": 0.6776644107893142
+          }
+        }
+      },
+      "fixed": {
+        "state": "complete",
+        "n_pairs": 2979,
+        "n_sources": 993,
+        "n_inconsistent": 464,
+        "prevalence": 0.15575696542463915,
+        "ranking": {
+          "HRCAM": {
+            "auroc": 0.7972981079042983,
+            "ap": 0.5095241765313248
+          },
+          "JSD": {
+            "auroc": 0.8278261465688626,
+            "ap": 0.5643142833819749
+          },
+          "NCD": {
+            "auroc": 0.7456613765681771,
+            "ap": 0.438005548447852
+          }
+        }
+      },
+      "ground_truth": {
+        "state": "complete",
+        "n_pairs": 2979,
+        "n_sources": 993,
+        "n_inconsistent": 464,
+        "prevalence": 0.15575696542463915,
+        "ranking": {
+          "HRCAM": {
+            "auroc": 0.7649928018098308,
+            "ap": 0.4111092532317949
+          },
+          "JSD": {
+            "auroc": 0.7984241105093577,
+            "ap": 0.4460644510935956
+          },
+          "NCD": {
+            "auroc": 0.7155540892575581,
+            "ap": 0.36333070046515287
+          }
+        }
+      }
+    },
+    "source_correctness_strata_common": {
+      "source_correct": {
+        "state": "complete",
+        "n_pairs": 2607,
+        "n_sources": 869,
+        "n_inconsistent": 248,
+        "prevalence": 0.09512850019179134,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.8912093697438772,
+            "ap": 0.6020268028729123
+          },
+          "own_JSD": {
+            "auroc": 0.8674670787238989,
+            "ap": 0.5204876341624552
+          },
+          "own_NCD": {
+            "auroc": 0.8844969164079913,
+            "ap": 0.615272818906207
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7906490585130386,
+            "ap": 0.37629225625780166
+          },
+          "fixed_JSD": {
+            "auroc": 0.8209926978353321,
+            "ap": 0.42203874938665126
+          },
+          "fixed_NCD": {
+            "auroc": 0.7389236828070944,
+            "ap": 0.31352503630803324
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7906490585130386,
+            "ap": 0.37629225625780166
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.8209926978353321,
+            "ap": 0.42203874938665126
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.7389236828070944,
+            "ap": 0.31352503630803324
+          }
+        }
+      },
+      "source_incorrect": {
+        "state": "complete",
+        "n_pairs": 372,
+        "n_sources": 124,
+        "n_inconsistent": 216,
+        "prevalence": 0.5806451612903226,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.8319088319088319,
+            "ap": 0.8748134020195859
+          },
+          "own_JSD": {
+            "auroc": 0.8209283000949668,
+            "ap": 0.8617805205558416
+          },
+          "own_NCD": {
+            "auroc": 0.8093839031339031,
+            "ap": 0.8605023428142805
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7099952516619183,
+            "ap": 0.7940332515164119
+          },
+          "fixed_JSD": {
+            "auroc": 0.7573896011396011,
+            "ap": 0.8311803783207827
+          },
+          "fixed_NCD": {
+            "auroc": 0.6558641975308642,
+            "ap": 0.7522524754035933
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.47685185185185186,
+            "ap": 0.573792995830019
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.49685422602089274,
+            "ap": 0.5845325880726994
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.46409069325735997,
+            "ap": 0.5719830338523522
+          }
+        }
+      }
+    },
+    "backgrounds_common": {
+      "black": {
+        "state": "complete",
+        "n_pairs": 993,
+        "n_sources": 993,
+        "n_inconsistent": 183,
+        "prevalence": 0.18429003021148035,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.8779329420495177,
+            "ap": 0.7039886693684686
+          },
+          "own_JSD": {
+            "auroc": 0.860419618160966,
+            "ap": 0.6471295602066491
+          },
+          "own_NCD": {
+            "auroc": 0.8626728732375363,
+            "ap": 0.694523309164603
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7920461445051609,
+            "ap": 0.5829205653004793
+          },
+          "fixed_JSD": {
+            "auroc": 0.830068137354112,
+            "ap": 0.6350557499524677
+          },
+          "fixed_NCD": {
+            "auroc": 0.7392430682048169,
+            "ap": 0.5031567391593946
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7593064831680496,
+            "ap": 0.5107407581805307
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.7979693719220131,
+            "ap": 0.5472367649690362
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.7132969034608379,
+            "ap": 0.45257984982254695
+          }
+        }
+      },
+      "gray": {
+        "state": "complete",
+        "n_pairs": 993,
+        "n_sources": 993,
+        "n_inconsistent": 137,
+        "prevalence": 0.1379657603222558,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.9125537212633876,
+            "ap": 0.6897859174113803
+          },
+          "own_JSD": {
+            "auroc": 0.889138072174091,
+            "ap": 0.6259856181128416
+          },
+          "own_NCD": {
+            "auroc": 0.9008885326420629,
+            "ap": 0.6864441213046447
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.8126918616549559,
+            "ap": 0.4736821972942106
+          },
+          "fixed_JSD": {
+            "auroc": 0.8378470564158538,
+            "ap": 0.5261218454141012
+          },
+          "fixed_NCD": {
+            "auroc": 0.7602070400436591,
+            "ap": 0.40685657531055536
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7767327239238693,
+            "ap": 0.35198561978583176
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.8008049662323486,
+            "ap": 0.3747503216079459
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.7254672897196262,
+            "ap": 0.3107240030182933
+          }
+        }
+      },
+      "white": {
+        "state": "complete",
+        "n_pairs": 993,
+        "n_sources": 993,
+        "n_inconsistent": 144,
+        "prevalence": 0.14501510574018128,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.8988679492213061,
+            "ap": 0.6767952041535361
+          },
+          "own_JSD": {
+            "auroc": 0.8864432011516816,
+            "ap": 0.64103548449272
+          },
+          "own_NCD": {
+            "auroc": 0.8855679884831826,
+            "ap": 0.6566750348472271
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7879613270514331,
+            "ap": 0.45810705065671803
+          },
+          "fixed_JSD": {
+            "auroc": 0.8140704750687083,
+            "ap": 0.51558862781216
+          },
+          "fixed_NCD": {
+            "auroc": 0.7378615364481089,
+            "ap": 0.39384055728765943
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7600608559089125,
+            "ap": 0.3732410486883023
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.7956746499149325,
+            "ap": 0.4094704210370427
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.707858918989661,
+            "ap": 0.3275545681495085
+          }
+        }
+      }
+    },
+    "identity_checks": {
+      "source_correct_GT_fixed_score_checks": 2607,
+      "source_correct_GT_fixed_score_max_error": 1.3808398868775384e-15,
+      "consistent_own_fixed_score_checks": 2515,
+      "consistent_own_fixed_score_max_error": 0.0
+    },
+    "three_way_excluded_from_original_two_way": 0,
+    "three_way_excluded_consistent": 0,
+    "three_way_excluded_inconsistent": 0
+  },
+  "cub_v1": {
+    "coverage": {
+      "own": {
+        "all_pairs": 3000,
+        "mask_eligible_pairs": 2889,
+        "mask_eligible_sources": 963,
+        "valid_pairs": 2889,
+        "valid_sources": 963,
+        "invalid_pairs": 0,
+        "invalid_consistent": 0,
+        "invalid_inconsistent": 0,
+        "by_source_correctness": {
+          "True": {
+            "eligible_pairs": 1623,
+            "valid_pairs": 1623,
+            "eligible_sources": 541,
+            "valid_sources": 541
+          },
+          "False": {
+            "eligible_pairs": 1266,
+            "valid_pairs": 1266,
+            "eligible_sources": 422,
+            "valid_sources": 422
+          }
+        }
+      },
+      "fixed": {
+        "all_pairs": 3000,
+        "mask_eligible_pairs": 2889,
+        "mask_eligible_sources": 963,
+        "valid_pairs": 2887,
+        "valid_sources": 963,
+        "invalid_pairs": 2,
+        "invalid_consistent": 0,
+        "invalid_inconsistent": 2,
+        "by_source_correctness": {
+          "True": {
+            "eligible_pairs": 1623,
+            "valid_pairs": 1623,
+            "eligible_sources": 541,
+            "valid_sources": 541
+          },
+          "False": {
+            "eligible_pairs": 1266,
+            "valid_pairs": 1264,
+            "eligible_sources": 422,
+            "valid_sources": 422
+          }
+        }
+      },
+      "ground_truth": {
+        "all_pairs": 3000,
+        "mask_eligible_pairs": 2889,
+        "mask_eligible_sources": 963,
+        "valid_pairs": 2889,
+        "valid_sources": 963,
+        "invalid_pairs": 0,
+        "invalid_consistent": 0,
+        "invalid_inconsistent": 0,
+        "by_source_correctness": {
+          "True": {
+            "eligible_pairs": 1623,
+            "valid_pairs": 1623,
+            "eligible_sources": 541,
+            "valid_sources": 541
+          },
+          "False": {
+            "eligible_pairs": 1266,
+            "valid_pairs": 1266,
+            "eligible_sources": 422,
+            "valid_sources": 422
+          }
+        },
+        "invalid_source_map_sources": 0,
+        "invalid_followup_pairs": 0
+      }
+    },
+    "three_way_common": {
+      "state": "complete",
+      "n_pairs": 2887,
+      "n_sources": 963,
+      "n_inconsistent": 1826,
+      "prevalence": 0.6324904745410461,
+      "ranking": {
+        "own_HRCAM": {
+          "auroc": 0.8066652695952174,
+          "ap": 0.868353288499206,
+          "auroc_ci95": [
+            0.7843480426361296,
+            0.8259627348207061
+          ],
+          "ap_ci95": [
+            0.8473614436588659,
+            0.8873496548981445
+          ]
+        },
+        "own_JSD": {
+          "auroc": 0.7797439436436518,
+          "ap": 0.8491625107561367,
+          "auroc_ci95": [
+            0.7559505079832457,
+            0.8015033005517658
+          ],
+          "ap_ci95": [
+            0.8263167090702915,
+            0.8700889963343991
+          ]
+        },
+        "own_NCD": {
+          "auroc": 0.7939698129335094,
+          "ap": 0.8584757263692364,
+          "auroc_ci95": [
+            0.7716858112658594,
+            0.8141817242719681
+          ],
+          "ap_ci95": [
+            0.8372697004350041,
+            0.8784235256413654
+          ]
+        },
+        "fixed_HRCAM": {
+          "auroc": 0.7657844126054385,
+          "ap": 0.8483980736432873,
+          "auroc_ci95": [
+            0.7424767766108971,
+            0.7853932967613728
+          ],
+          "ap_ci95": [
+            0.8266380369943102,
+            0.8680513036793837
+          ]
+        },
+        "fixed_JSD": {
+          "auroc": 0.7894430949743624,
+          "ap": 0.8712433433389254,
+          "auroc_ci95": [
+            0.7661439102944363,
+            0.8074361004144768
+          ],
+          "ap_ci95": [
+            0.851497151340046,
+            0.8873113171760952
+          ]
+        },
+        "fixed_NCD": {
+          "auroc": 0.7292976206083867,
+          "ap": 0.8164021934524435,
+          "auroc_ci95": [
+            0.704664671835652,
+            0.7512470522967412
+          ],
+          "ap_ci95": [
+            0.7915375421731748,
+            0.839886845472915
+          ]
+        },
+        "ground_truth_HRCAM": {
+          "auroc": 0.7288206893205588,
+          "ap": 0.8183028396418516,
+          "auroc_ci95": [
+            0.7023068547402344,
+            0.7526990070396855
+          ],
+          "ap_ci95": [
+            0.7911418221355593,
+            0.8416816331384043
+          ]
+        },
+        "ground_truth_JSD": {
+          "auroc": 0.7469600791994987,
+          "ap": 0.8333364185444901,
+          "auroc_ci95": [
+            0.7215643146288925,
+            0.7691596615579089
+          ],
+          "ap_ci95": [
+            0.8083704238357861,
+            0.8546138274677892
+          ]
+        },
+        "ground_truth_NCD": {
+          "auroc": 0.7002378462526311,
+          "ap": 0.7983845070477452,
+          "auroc_ci95": [
+            0.6748338370111784,
+            0.7251488313914541
+          ],
+          "ap_ci95": [
+            0.7723857900117774,
+            0.8224868357433618
+          ]
+        }
+      },
+      "paired_differences": {
+        "ground_truth_HRCAM_minus_own_HRCAM": {
+          "auroc": {
+            "difference": -0.07784458027465868,
+            "ci95": [
+              -0.09626979801163493,
+              -0.058840275201203655
+            ]
+          },
+          "ap": {
+            "difference": -0.050050448857354435,
+            "ci95": [
+              -0.06847066294771274,
+              -0.03267595458762625
+            ]
+          }
+        },
+        "ground_truth_HRCAM_minus_fixed_HRCAM": {
+          "auroc": {
+            "difference": -0.036963723284879735,
+            "ci95": [
+              -0.05364025352368302,
+              -0.021130739493025904
+            ]
+          },
+          "ap": {
+            "difference": -0.030095234001435767,
+            "ci95": [
+              -0.04571619437982655,
+              -0.015071288207030775
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_own_HRCAM": {
+          "auroc": {
+            "difference": -0.040880856989778946,
+            "ci95": [
+              -0.05359377373492891,
+              -0.027398993392686127
+            ]
+          },
+          "ap": {
+            "difference": -0.019955214855918668,
+            "ci95": [
+              -0.02948408022809195,
+              -0.010709868163704308
+            ]
+          }
+        },
+        "own_HRCAM_minus_own_JSD": {
+          "auroc": {
+            "difference": 0.0269213259515656,
+            "ci95": [
+              0.014750889869904516,
+              0.03798572189526276
+            ]
+          },
+          "ap": {
+            "difference": 0.01919077774306932,
+            "ci95": [
+              0.010605574748933482,
+              0.028317747907235947
+            ]
+          }
+        },
+        "own_HRCAM_minus_own_NCD": {
+          "auroc": {
+            "difference": 0.012695456661708016,
+            "ci95": [
+              0.006301440392405086,
+              0.01927353540787247
+            ]
+          },
+          "ap": {
+            "difference": 0.009877562129969597,
+            "ci95": [
+              0.0037220775037398205,
+              0.015978954733470135
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_JSD": {
+          "auroc": {
+            "difference": -0.023658682368923878,
+            "ci95": [
+              -0.034903423956453836,
+              -0.012031261058882607
+            ]
+          },
+          "ap": {
+            "difference": -0.02284526969563805,
+            "ci95": [
+              -0.03103016557333643,
+              -0.014782910467494043
+            ]
+          }
+        },
+        "fixed_HRCAM_minus_fixed_NCD": {
+          "auroc": {
+            "difference": 0.03648679199705185,
+            "ci95": [
+              0.028947625327399848,
+              0.043461174238560725
+            ]
+          },
+          "ap": {
+            "difference": 0.03199588019084387,
+            "ci95": [
+              0.024968241010486204,
+              0.038756453790193365
+            ]
+          }
+        },
+        "ground_truth_HRCAM_minus_ground_truth_JSD": {
+          "auroc": {
+            "difference": -0.018139389878939927,
+            "ci95": [
+              -0.028859780493994857,
+              -0.006289513571561491
+            ]
+          },
+          "ap": {
+            "difference": -0.015033578902638567,
+            "ci95": [
+              -0.022247246823465613,
+              -0.007312151996398547
+            ]
+          }
+        },
+        "ground_truth_HRCAM_minus_ground_truth_NCD": {
+          "auroc": {
+            "difference": 0.028582843067927688,
+            "ci95": [
+              0.021589552645416225,
+              0.03599591852739933
+            ]
+          },
+          "ap": {
+            "difference": 0.019918332594106358,
+            "ci95": [
+              0.014312495753936649,
+              0.025594972153643168
+            ]
+          }
+        }
+      },
+      "group_median_gaps": {
+        "own": {
+          "difference": 0.019835039207195863,
+          "ci95": [
+            0.018053605554446326,
+            0.022296667492650944
+          ]
+        },
+        "fixed": {
+          "difference": 0.015794860961027647,
+          "ci95": [
+            0.013783995303449505,
+            0.018139492034197183
+          ]
+        },
+        "ground_truth": {
+          "difference": 0.014413561654435494,
+          "ci95": [
+            0.01245743535572533,
+            0.01637774453616317
+          ]
+        }
+      },
+      "bootstrap_seed": 20261011,
+      "bootstrap_resamples": 1000
+    },
+    "two_way_original_Table8_reproduction": {
+      "state": "complete",
+      "n_pairs": 2887,
+      "n_sources": 963,
+      "n_inconsistent": 1826,
+      "prevalence": 0.6324904745410461,
+      "ranking": {
+        "own_HRCAM": {
+          "auroc": 0.8066652695952174,
+          "ap": 0.868353288499206
+        },
+        "own_JSD": {
+          "auroc": 0.7797439436436518,
+          "ap": 0.8491625107561367
+        },
+        "own_NCD": {
+          "auroc": 0.7939698129335094,
+          "ap": 0.8584757263692364
+        },
+        "fixed_HRCAM": {
+          "auroc": 0.7657844126054385,
+          "ap": 0.8483980736432873
+        },
+        "fixed_JSD": {
+          "auroc": 0.7894430949743624,
+          "ap": 0.8712433433389254
+        },
+        "fixed_NCD": {
+          "auroc": 0.7292976206083867,
+          "ap": 0.8164021934524435
+        }
+      }
+    },
+    "all_valid_by_convention": {
+      "own": {
+        "state": "complete",
+        "n_pairs": 2889,
+        "n_sources": 963,
+        "n_inconsistent": 1828,
+        "prevalence": 0.6327448944271374,
+        "ranking": {
+          "HRCAM": {
+            "auroc": 0.806606623947929,
+            "ap": 0.8684202740450485
+          },
+          "JSD": {
+            "auroc": 0.7796265857114277,
+            "ap": 0.8492273329803633
+          },
+          "NCD": {
+            "auroc": 0.7939477434483384,
+            "ap": 0.8585567946671898
+          }
+        }
+      },
+      "fixed": {
+        "state": "complete",
+        "n_pairs": 2887,
+        "n_sources": 963,
+        "n_inconsistent": 1826,
+        "prevalence": 0.6324904745410461,
+        "ranking": {
+          "HRCAM": {
+            "auroc": 0.7657844126054385,
+            "ap": 0.8483980736432873
+          },
+          "JSD": {
+            "auroc": 0.7894430949743624,
+            "ap": 0.8712433433389254
+          },
+          "NCD": {
+            "auroc": 0.7292976206083867,
+            "ap": 0.8164021934524435
+          }
+        }
+      },
+      "ground_truth": {
+        "state": "complete",
+        "n_pairs": 2889,
+        "n_sources": 963,
+        "n_inconsistent": 1828,
+        "prevalence": 0.6327448944271374,
+        "ranking": {
+          "HRCAM": {
+            "auroc": 0.7291158376247996,
+            "ap": 0.8188391668681197
+          },
+          "JSD": {
+            "auroc": 0.7472348657494581,
+            "ap": 0.8338055546260821
+          },
+          "NCD": {
+            "auroc": 0.700564266814058,
+            "ap": 0.7989840172081819
+          }
+        }
+      }
+    },
+    "source_correctness_strata_common": {
+      "source_correct": {
+        "state": "complete",
+        "n_pairs": 1623,
+        "n_sources": 541,
+        "n_inconsistent": 810,
+        "prevalence": 0.49907578558225507,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.8071659605484944,
+            "ap": 0.8102603630822478
+          },
+          "own_JSD": {
+            "auroc": 0.7709291907733891,
+            "ap": 0.7710032299404119
+          },
+          "own_NCD": {
+            "auroc": 0.8017964253716611,
+            "ap": 0.805084443077432
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7582114710035989,
+            "ap": 0.7603029772658803
+          },
+          "fixed_JSD": {
+            "auroc": 0.7864546793616083,
+            "ap": 0.7988570262163168
+          },
+          "fixed_NCD": {
+            "auroc": 0.7189376338207827,
+            "ap": 0.7133557876629573
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7582114710035989,
+            "ap": 0.7603029772658803
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.7864546793616083,
+            "ap": 0.7988570262163168
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.7189376338207827,
+            "ap": 0.7133557876629573
+          }
+        }
+      },
+      "source_incorrect": {
+        "state": "complete",
+        "n_pairs": 1264,
+        "n_sources": 422,
+        "n_inconsistent": 1016,
+        "prevalence": 0.8037974683544303,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.7674149098298197,
+            "ap": 0.9175784430483562
+          },
+          "own_JSD": {
+            "auroc": 0.7570524828549656,
+            "ap": 0.9141041063187851
+          },
+          "own_NCD": {
+            "auroc": 0.7412806388112775,
+            "ap": 0.9069212261325644
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7359625031750064,
+            "ap": 0.9153365124484274
+          },
+          "fixed_JSD": {
+            "auroc": 0.7675022225044451,
+            "ap": 0.9302083830823547
+          },
+          "fixed_NCD": {
+            "auroc": 0.6920362903225807,
+            "ap": 0.89447007485182
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.6084859982219964,
+            "ap": 0.8677755873957039
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.6280480060960122,
+            "ap": 0.8734751233141469
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.588495364490729,
+            "ap": 0.8625255326673287
+          }
+        }
+      }
+    },
+    "backgrounds_common": {
+      "black": {
+        "state": "complete",
+        "n_pairs": 962,
+        "n_sources": 962,
+        "n_inconsistent": 693,
+        "prevalence": 0.7203742203742204,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.7853736515446552,
+            "ap": 0.8912687973702442
+          },
+          "own_JSD": {
+            "auroc": 0.7657509776468883,
+            "ap": 0.8804084887620878
+          },
+          "own_NCD": {
+            "auroc": 0.7738618259064356,
+            "ap": 0.8844172032601664
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7679610765112623,
+            "ap": 0.8920784341434064
+          },
+          "fixed_JSD": {
+            "auroc": 0.807887692646057,
+            "ap": 0.9141689533969429
+          },
+          "fixed_NCD": {
+            "auroc": 0.7260335698997409,
+            "ap": 0.866787526229658
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7417617491966935,
+            "ap": 0.877297422676519
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.7704072053514432,
+            "ap": 0.8909166517159575
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.7089267609713705,
+            "ap": 0.8617021868534221
+          }
+        }
+      },
+      "gray": {
+        "state": "complete",
+        "n_pairs": 963,
+        "n_sources": 963,
+        "n_inconsistent": 552,
+        "prevalence": 0.573208722741433,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.824138721393561,
+            "ap": 0.8534850538052849
+          },
+          "own_JSD": {
+            "auroc": 0.7985736450509539,
+            "ap": 0.8365882810666005
+          },
+          "own_NCD": {
+            "auroc": 0.8076668782397123,
+            "ap": 0.8387246549789065
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7603803025494552,
+            "ap": 0.8075103274441153
+          },
+          "fixed_JSD": {
+            "auroc": 0.7753799499277125,
+            "ap": 0.8347711634121172
+          },
+          "fixed_NCD": {
+            "auroc": 0.7257792940512712,
+            "ap": 0.768482372790174
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7267754504742763,
+            "ap": 0.7833746825059673
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.7334488169540534,
+            "ap": 0.7983028865484287
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.7013734616876477,
+            "ap": 0.7600451875809914
+          }
+        }
+      },
+      "white": {
+        "state": "complete",
+        "n_pairs": 962,
+        "n_sources": 962,
+        "n_inconsistent": 581,
+        "prevalence": 0.603950103950104,
+        "ranking": {
+          "own_HRCAM": {
+            "auroc": 0.802833380767163,
+            "ap": 0.8581574414340059
+          },
+          "own_JSD": {
+            "auroc": 0.7742465926698922,
+            "ap": 0.8339572192881746
+          },
+          "own_NCD": {
+            "auroc": 0.7923482456259232,
+            "ap": 0.8484498192031837
+          },
+          "fixed_HRCAM": {
+            "auroc": 0.7576176471916914,
+            "ap": 0.831337693956529
+          },
+          "fixed_JSD": {
+            "auroc": 0.779066773279846,
+            "ap": 0.854087797086222
+          },
+          "fixed_NCD": {
+            "auroc": 0.7239080054752194,
+            "ap": 0.7983797002960787
+          },
+          "ground_truth_HRCAM": {
+            "auroc": 0.7063529709388737,
+            "ap": 0.7777595675343791
+          },
+          "ground_truth_JSD": {
+            "auroc": 0.7281002525286749,
+            "ap": 0.7954945654444903
+          },
+          "ground_truth_NCD": {
+            "auroc": 0.6782405211396768,
+            "ap": 0.7579757807810146
+          }
+        }
+      }
+    },
+    "identity_checks": {
+      "source_correct_GT_fixed_score_checks": 1623,
+      "source_correct_GT_fixed_score_max_error": 1.134942834157826e-15,
+      "consistent_own_fixed_score_checks": 1061,
+      "consistent_own_fixed_score_max_error": 0.0
+    },
+    "three_way_excluded_from_original_two_way": 0,
+    "three_way_excluded_consistent": 0,
+    "three_way_excluded_inconsistent": 0
+  }
+}

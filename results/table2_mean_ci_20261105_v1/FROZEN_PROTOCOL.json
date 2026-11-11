@@ -1,0 +1,15 @@
+{
+  "time": 1793860889.2341888,
+  "code_files": {
+    "PROTOCOL.md": "4659387b93b91a9c6b38533a851f2d0d2ae2e8e3d98f2e1eaecd82d6f5679a0e",
+    "audit.py": "c06eae6d9545ee4ca327a546840aa9492756976c9be5bcce8824c50f7023f515",
+    "calculate.py": "6c37cf59b6263197ce2203718fca5a45f14adc59b643e0aae1c4ce6a300a080c",
+    "collect.py": "74a97538af031efc783f716e004354684a59c19976457979b89963a1ae1c487b",
+    "common.py": "082fdcfebcd6f0941e1a21852070bc407d8427b11a49d528919f552ef106fff5",
+    "render_table.py": "040e3c4a72478392d0b8a78838ddc2f883719d667e5e6c5423465f6c9681306e",
+    "run_pipeline.py": "96d2f638bd8465f9d5390ff5980a43cda7e3e190762fd6dbc6634731ceecf94a"
+  },
+  "scope": "Table 2 saved-score reanalysis only",
+  "new_model_inference": false,
+  "manuscript_edited": false
+}

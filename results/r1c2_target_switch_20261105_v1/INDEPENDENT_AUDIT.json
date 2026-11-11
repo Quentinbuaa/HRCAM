@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "point_entries": 84,
+  "intervals": 84,
+  "rank_credit_row_checks": 20610,
+  "map_pair_checks": 117,
+  "correlations": 24,
+  "max_error": 1.7763568394002505e-15,
+  "map_max_error": 2.3522850334245504e-15,
+  "datasets": {
+    "pets_v1": {
+      "pairs": 2979,
+      "sources": 993,
+      "map_pairs_checked": 57
+    },
+    "cub_v1": {
+      "pairs": 2887,
+      "sources": 963,
+      "map_pairs_checked": 60
+    }
+  },
+  "seconds": 55.09725546836853
+}

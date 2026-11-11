@@ -1,0 +1,66 @@
+{
+  "source": "Entropy-latest\\Entropy-clean.tex",
+  "sha256": "197ef6c2f75e2c3423635415b75d870d5763260f556eef39b6fec189e06b20a0",
+  "datasets": {
+    "pets_v1": {
+      "JSD": {
+        "delta_median": 0.0266,
+        "auroc": 0.8778
+      },
+      "NCD": {
+        "delta_median": 0.0332,
+        "auroc": 0.8816
+      },
+      "Minimum": {
+        "delta_median": 0.0244,
+        "auroc": 0.8929
+      },
+      "Maximum": {
+        "delta_median": 0.0353,
+        "auroc": 0.8848
+      },
+      "Arithmetic mean": {
+        "delta_median": 0.0295,
+        "auroc": 0.8932
+      },
+      "Geometric mean": {
+        "delta_median": 0.0295,
+        "auroc": 0.8948
+      },
+      "Harmonic (H-RCAM)": {
+        "delta_median": 0.0288,
+        "auroc": 0.8953
+      }
+    },
+    "cub_v1": {
+      "JSD": {
+        "delta_median": 0.0186,
+        "auroc": 0.7796
+      },
+      "NCD": {
+        "delta_median": 0.0215,
+        "auroc": 0.7939
+      },
+      "Minimum": {
+        "delta_median": 0.0173,
+        "auroc": 0.8064
+      },
+      "Maximum": {
+        "delta_median": 0.0237,
+        "auroc": 0.7836
+      },
+      "Arithmetic mean": {
+        "delta_median": 0.0206,
+        "auroc": 0.7989
+      },
+      "Geometric mean": {
+        "delta_median": 0.02,
+        "auroc": 0.804
+      },
+      "Harmonic (H-RCAM)": {
+        "delta_median": 0.0198,
+        "auroc": 0.8066
+      }
+    }
+  }
+}

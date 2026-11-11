@@ -1,0 +1,27 @@
+{
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "gpu_used": false,
+  "python": "3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:21:40) [GCC 14.3.0]",
+  "numpy": "2.5.2",
+  "scipy": "1.18.0",
+  "sklearn": "1.9.0",
+  "POT": "0.9.7.post1",
+  "bootstrap": 1000,
+  "seed": 20261104,
+  "normalization": "raw defined candidate distances; no fitted clipping",
+  "source_sha256": {
+    "metrics.py": "3d9ba7e5dd84a9735ff0d866df99b9ff75fda142de340e958fb45a6427d12901",
+    "transport_metrics.py": "fcdb338305150851df58a1258f3501c32bda64edce8463b087a782c3b2761c9b"
+  },
+  "script_sha256": "a1c42030a3f7af4a74bbf2b42c0568a01db8d7f084dfb12fd6dc9f1af76de802",
+  "protocol_sha256": "3bba30b700c48a7292bfba73e600c9ece4b0bc60975340eb6b11a973ed84f9c3"
+}

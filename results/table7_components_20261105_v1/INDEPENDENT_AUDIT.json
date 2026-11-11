@@ -1,0 +1,9 @@
+{
+  "state": "passed",
+  "fusion_point_entries": 40,
+  "fusion_intervals": 40,
+  "correlations": 32,
+  "ratio_statistics": 152,
+  "max_error": 3.3306690738754696e-16,
+  "seconds": 34.37886071205139
+}

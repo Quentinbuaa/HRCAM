@@ -1,0 +1,18 @@
+{
+  "time": 1793863657.6910217,
+  "code_files": {
+    "PROTOCOL.md": "d35541f1e45d391e93a2c57a096631cd37b446d8007718c4cbfab1e8ad3ed0e6",
+    "TABLE4_FIXTURE.json": "008815a176ece549ca268fbe266d98e22850fe8d820bc8b9000df7328d067bf2",
+    "audit.py": "0c07a5ddc81c49f3dd1e167d076eaaa6b76f5f9b0aa87f2519137e5fd988257e",
+    "calculate.py": "673472390c38c8dcd43513f91ad9d5a034a241816160a253f1a41168e7f3e9d4",
+    "cases.py": "d6b83a5162cb65b884d3e7c1a9f972a9afb244aa2c46886bbbd1965e5f21bc52",
+    "collect.py": "74a97538af031efc783f716e004354684a59c19976457979b89963a1ae1c487b",
+    "common.py": "96d10c232edea25d53ca6872724ebb58dda2260c9060ac1cedca4b930c3b970d",
+    "inspect_saved_maps.py": "188fdc44ac48ec446167a41dd905a7e18881a06cf9ee8b6427831070dfa24be5",
+    "render_table.py": "d0e7fd3700472d3ea7a5e52b4948d9f326aa439dd4f0c2f15df839780bfabc40",
+    "run_pipeline.py": "726d5da6bb2c9c7ec38fbb2ea9f2c61bef06fafa1b3ed57cfd4960b447177b85"
+  },
+  "scope": "DenseNet six-dataset and ResNet Table 4 saved-map baseline extension",
+  "new_model_inference": false,
+  "manuscript_edited": false
+}

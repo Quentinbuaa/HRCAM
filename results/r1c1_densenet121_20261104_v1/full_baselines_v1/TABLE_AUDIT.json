@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "entries_checked": 40,
+  "independent_methods": [
+    "AUROC via sorted negative scores and half-credit ties",
+    "AP via cumulative threshold groups, including ties"
+  ],
+  "maximum_numerical_error": 1.7763568394002505e-15,
+  "csv_entries_equal_summary": true,
+  "download_hashes_verified": true,
+  "H_RCAM_has_largest_point_estimates_all_four_columns": true
+}

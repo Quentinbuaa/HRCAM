@@ -1,0 +1,62 @@
+{
+  "state": "frozen_before_inference",
+  "time": 1793797432.8562078,
+  "prepared_files": {
+    "cub_v1_sources.npz": "14fc3fbd4c782fbe5b5da37e5fb4d57f20364a948afdd9a45c528e6d0520178f",
+    "donor_assignment.json": "db90dd0b0f3630c5942df1d523cd3f741553d7fb440b45191617769e9bf9b149",
+    "donor_rejections.json": "fa0cd5f47169122d6344850b0ec986f2538cccc55bdd25b4920d2465efbfd5d4",
+    "donor_visual_exclusions.json": "3be5af514fe3ec099bfcf78feca5a56b76874e8d3d0dedd60da713139a2bccae",
+    "donors.npy": "c4affd953b46bd09babc569e27e740b321f18401286be3fe4721217989408855",
+    "pets_v1_sources.npz": "e88549bb74a4ce4cc9cf2e6665108932062dc9ea3c37e09ab9409128f07d5290",
+    "preparation_checks.json": "0784d3004db7acbf6a445ff7b8cd7e5e8378976882257125267503a033dba7be",
+    "preparation_metadata.json": "7e3463671c3dd0aaf3413418db647ad5683ebae01b4afb2eb9ac06ac0d487528",
+    "qa_page_1.jpg": "751a7792914b900c37b98bab5b39e75a9fad53b99ad4fb130c1b9c94f55fba24",
+    "qa_page_2.jpg": "a8f64dac1abe45a10d4950f2ca45ed87649ee8a4d1219c6c1e7463acc32b78e0",
+    "qa_page_3.jpg": "2b6e11386e6738c58f380f8ea17f89f57116af0dee9071881a6f0d52b8d5cd07",
+    "qa_page_4.jpg": "510992bfa7cb278ca85d118f1ea86137b6a489338a31e283f65891adb86f0e5c"
+  },
+  "protocol_sha256": "ee92aa35e6e133b83cffa020313f593d9bc584c64d1df2e9fed6fda1dacc4180",
+  "visual_qa": {
+    "state": "passed",
+    "classifier_outputs_seen": false,
+    "candidate_shard_rows_visually_reviewed": 3334,
+    "candidate_contact_sheets_reviewed": 17,
+    "excluded_candidate_rows": 183,
+    "final_composites_visually_reviewed": 64,
+    "final_composite_sheets_reviewed": 4,
+    "final_sample_obvious_competing_animals": "none observed",
+    "all_1956_foregrounds_pixel_exact": true,
+    "reviewer": "Codex visual inspection",
+    "limitations": "Thumbnail QA excludes obvious animals/animal depictions and artwork/graphics. It does not guarantee the absence of small or occluded objects, and permits photographs of objects, buildings, flowers, textures, and people."
+  },
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "no_donor_reuse": true,
+  "unique_crops": 1956,
+  "excluded_donor_rows": 183,
+  "code_files": {
+    "PROTOCOL.md": "ee92aa35e6e133b83cffa020313f593d9bc584c64d1df2e9fed6fda1dacc4180",
+    "analyze_results.py": "5bd7c984a162eefc1c82fd75002bf37dd4c4ef00abc52465e3e19d1ccdc9d442",
+    "audit_results.py": "5944e6210ee62024860b36b8678d9066037b4096444cd45a60b1d1e6bdc92292",
+    "donor_visual_exclusions.json": "3be5af514fe3ec099bfcf78feca5a56b76874e8d3d0dedd60da713139a2bccae",
+    "fetch_donors.py": "8de7d5b6e91d3feed4e0622a23e6e4f983624c24c2fb326d81d46bfe67be1e84",
+    "freeze_inputs.py": "c1c2bf75bc0ec4585de6147740010c9cf6a76449f5e1130d5d2259c4811eba6b",
+    "make_donor_qa.py": "8a86e51a69a01f7c35874a7df54cc768a99a0848e5aeeb07706dee9a6063ee8b",
+    "prepare_pairs.py": "a015500e5645d477f89eaf1420ff9a13d461dd3b78c514262adb43b740edd36c",
+    "qa_review.json": "fa0f86a6140e0ce4965702bfe724b5767d692c67b2630f880da4d7b8921df08f",
+    "run_extraction.py": "5941f00f5d7443a3db128d23a90aaf3620294768f49dc71118844cc5e707029e",
+    "run_pipeline.py": "c96df5961262947c4e97680282566f1634d012b72deb14367d5508443aef6faf",
+    "start_retry.py": "0474770d19d5f91b7c8dc4c7030c06fa0b1c3017132561d85131758ccfd3e3f4"
+  },
+  "parent_frozen_inputs_sha256": "380369a86a2bf1796b3e7057d8f1105cce94036d0b0b9ac84a2ce5dafcc2054f",
+  "retry_time": 1793803842.2225409,
+  "execution_fix": "Replay original source batches exactly; reuse verified archived source CAMs. Original final 7-image Pet batch reproduces archived maps with zero error. Natural donor assignment/scientific settings unchanged."
+}

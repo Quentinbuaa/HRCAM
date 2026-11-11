@@ -1,0 +1,17 @@
+{
+  "time": 1793872742.236959,
+  "code_files": {
+    "PROTOCOL.md": "f53facaa5304387e392a5adf7ab07bac9db238885bf45086d1c800d8face3a08",
+    "audit.py": "c6f8c16e797b64cf915f66401a3bdc800c80c8cb331c7175ccc3ab1a2491ca99",
+    "build_table8.py": "51eb0749e6384a6089606f00dca6a822389e09ec80dd73dabb9ec292a5078a2e",
+    "calculate.py": "89adf70612de301d9088482bcb4ace70147c6f6d782630975b1f135b85b6d975",
+    "collect.py": "f670e4850a8f692a2ba846f2fd20d9751acd132cc1598b0d231ee55410fbabdc",
+    "common.py": "6c619db77641e2f913ae41e103ccfcb460423d2181ca82c7dec3fb33b869a979",
+    "diagnostic.py": "a70c9ed9785dc422a15cb83d0cae21cd4bcb4716d89ef0776e2beae2e4e45e5a",
+    "render_table.py": "5e060d00d3ede971707e220eeca3bb71b69d423fd1f2257725311a37e8dcc049",
+    "run_pipeline.py": "fa4abbf65657be2df89a6e118dcff4b0093b3bcab2de96741c736eb8c4f23dad"
+  },
+  "scope": "Authorized R1C2 cached-map target contrasts and exact AUROC rank accounting",
+  "new_model_inference": false,
+  "manuscript_edited": false
+}

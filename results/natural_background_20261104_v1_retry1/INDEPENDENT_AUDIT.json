@@ -1,0 +1,36 @@
+{
+  "state": "passed",
+  "datasets": {
+    "pets_v1": {
+      "all_donor_hashes_verified": 993,
+      "all_foregrounds_pixel_exact": 993,
+      "checkpoint_matches_original_verified_sha256": true,
+      "closed_form_CAM_replay_sources": 16,
+      "closed_form_CAM_max_error": 2.384185791015625e-07,
+      "independent_SciPy_score_max_error": 1.1102230246251565e-15,
+      "sampled_predictions_all_match": true
+    },
+    "cub_v1": {
+      "all_donor_hashes_verified": 963,
+      "all_foregrounds_pixel_exact": 963,
+      "checkpoint_matches_original_verified_sha256": true,
+      "closed_form_CAM_replay_sources": 16,
+      "closed_form_CAM_max_error": 4.172325134277344e-07,
+      "independent_SciPy_score_max_error": 1.5543122344752192e-15,
+      "sampled_predictions_all_match": true
+    }
+  },
+  "table_entries_verified": 52,
+  "table_max_error": 1.4432899320127035e-15,
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "torch_threads": 4
+}

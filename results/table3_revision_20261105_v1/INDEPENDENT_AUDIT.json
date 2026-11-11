@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "datasets": {
+    "pets_v1": {
+      "explicit_window_distance_checks": 24,
+      "distance_max_error": 3.1086244689504383e-15,
+      "source_clusters": 993,
+      "pairs": 2979,
+      "successful_resamples": 1000
+    },
+    "cub_v1": {
+      "explicit_window_distance_checks": 24,
+      "distance_max_error": 3.885780586188048e-15,
+      "source_clusters": 963,
+      "pairs": 2889,
+      "successful_resamples": 1000
+    }
+  },
+  "point_entries_verified": 52,
+  "point_max_error": 1.5543122344752192e-15,
+  "intervals_verified": 100,
+  "interval_endpoint_max_error": 2.9282132274488504e-15
+}

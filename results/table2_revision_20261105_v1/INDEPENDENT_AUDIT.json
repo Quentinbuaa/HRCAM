@@ -1,0 +1,9 @@
+{
+  "state": "passed",
+  "point_entries": 156,
+  "new_median_intervals": 26,
+  "exactly_reused_audited_AUROC_intervals": 26,
+  "max_absolute_error": 2.220446049250313e-16,
+  "seconds": 10.134206771850586,
+  "method": "Python statistics.median/fmean, materialized source-cluster draws and integer rank counts"
+}

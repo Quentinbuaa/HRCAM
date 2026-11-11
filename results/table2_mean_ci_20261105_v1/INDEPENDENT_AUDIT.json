@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "point_entries": 104,
+  "new_mean_intervals": 26,
+  "exactly_reused_audited_median_intervals": 26,
+  "submitted_descriptive_values_reproduced": 80,
+  "max_absolute_error": 1.942890293094024e-16,
+  "seconds": 8.11486554145813,
+  "method": "Materialized source draws, statistics.fmean/median and direct extrema"
+}

@@ -1,0 +1,30 @@
+{
+  "pets_v1": {
+    "before": {
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/pets_v1/records.jsonl": "22f0159ca15abd2ab624a704768fbb7b630ad955608b91153f0eab5b305e635f",
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/analysis/summary.json": "3010c13455b181c1bdddee1f5b39c73fe6b5658204c2579b6e0ffb154615e57e",
+      "/home/dell/rcam_reproduction_20260911/runs/pets_v1/holdout_heatmaps.npz": "2b8ad1c0abbcbfca68313119b512b0309e0668ceb1e591b3a5dfe280d688e7bc",
+      "/home/dell/rcam_reproduction_20260911/runs/pets_v1/classifier.pt": "f3edfdb3b780e21a407a1aefec16634aef331fddaaacad0064d828f998d6e50c"
+    },
+    "after": {
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/pets_v1/records.jsonl": "22f0159ca15abd2ab624a704768fbb7b630ad955608b91153f0eab5b305e635f",
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/analysis/summary.json": "3010c13455b181c1bdddee1f5b39c73fe6b5658204c2579b6e0ffb154615e57e",
+      "/home/dell/rcam_reproduction_20260911/runs/pets_v1/holdout_heatmaps.npz": "2b8ad1c0abbcbfca68313119b512b0309e0668ceb1e591b3a5dfe280d688e7bc",
+      "/home/dell/rcam_reproduction_20260911/runs/pets_v1/classifier.pt": "f3edfdb3b780e21a407a1aefec16634aef331fddaaacad0064d828f998d6e50c"
+    }
+  },
+  "cub_v1": {
+    "before": {
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/cub_v1/records.jsonl": "09c4b926335ed7a6991d3f5bf2160308fc1d6b019dca25efdcd7e627b41761ee",
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/analysis/summary.json": "3010c13455b181c1bdddee1f5b39c73fe6b5658204c2579b6e0ffb154615e57e",
+      "/home/dell/rcam_reproduction_20260911/runs/cub_v1/holdout_heatmaps.npz": "044fd9f5aa59178ca17d7d812c12f13eeff25b268891100ace35517fc9fa4eed",
+      "/home/dell/rcam_reproduction_20260911/runs/cub_v1/classifier.pt": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18"
+    },
+    "after": {
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/cub_v1/records.jsonl": "09c4b926335ed7a6991d3f5bf2160308fc1d6b019dca25efdcd7e627b41761ee",
+      "/home/dell/rcam_reproduction_20260911/runs/r2c3_fixed_gt_20261105_v1/analysis/summary.json": "3010c13455b181c1bdddee1f5b39c73fe6b5658204c2579b6e0ffb154615e57e",
+      "/home/dell/rcam_reproduction_20260911/runs/cub_v1/holdout_heatmaps.npz": "044fd9f5aa59178ca17d7d812c12f13eeff25b268891100ace35517fc9fa4eed",
+      "/home/dell/rcam_reproduction_20260911/runs/cub_v1/classifier.pt": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18"
+    }
+  }
+}

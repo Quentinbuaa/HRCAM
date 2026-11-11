@@ -1,0 +1,38 @@
+{
+  "state": "passed",
+  "datasets": {
+    "pets_v1": {
+      "GT_valid_scores_independently_checked": 2997,
+      "GT_invalid_pairs_independently_checked": 0,
+      "SciPy_score_max_error": 4.848552115355176e-16,
+      "closed_form_GT_replay_sources": 16,
+      "closed_form_GT_map_max_error": 2.980232238769531e-07,
+      "foreground_replay_checks": 741,
+      "checkpoint_matches_verified_original": true
+    },
+    "cub_v1": {
+      "GT_valid_scores_independently_checked": 2999,
+      "GT_invalid_pairs_independently_checked": 1,
+      "SciPy_score_max_error": 4.2500725161431774e-16,
+      "closed_form_GT_replay_sources": 16,
+      "closed_form_GT_map_max_error": 2.980232238769531e-07,
+      "foreground_replay_checks": 744,
+      "checkpoint_matches_verified_original": true
+    }
+  },
+  "point_entries_verified": 72,
+  "point_max_error": 1.4432899320127035e-15,
+  "core_intervals_verified": 30,
+  "interval_endpoint_max_error": 2.1510571102112408e-15,
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "torch_threads": 4
+}

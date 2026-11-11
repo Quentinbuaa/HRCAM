@@ -1,0 +1,62 @@
+{
+  "acquisition": {
+    "repository": "unography/BG-20k-1200px",
+    "revision": "f94ef4f1c95fd81c088bc0a0ee3b0bd451b8109c",
+    "file": {
+      "type": "file",
+      "oid": "112f1d4c5d7ec75e4ca5d4a863fe9753b97c2f52",
+      "size": 497094652,
+      "lfs": {
+        "oid": "ace0b72c046373e51e38ebc3c2446a2bafb77d09127fef19e42ca15444d0e45f",
+        "size": 497094652,
+        "pointerSize": 134
+      },
+      "xetHash": "ec00f804633bf20dfc4380288d1a1e2c0f50ae68812d62da0cf007a6566a8e86",
+      "path": "data/train-00000-of-00006.parquet"
+    },
+    "url": "https://hf-mirror.com/datasets/unography/BG-20k-1200px/resolve/f94ef4f1c95fd81c088bc0a0ee3b0bd451b8109c/data/train-00000-of-00006.parquet?download=true",
+    "selection": "First shard fixed in protocol before evaluation",
+    "cpu_affinity": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "state": "complete",
+    "sha256": "ace0b72c046373e51e38ebc3c2446a2bafb77d09127fef19e42ca15444d0e45f",
+    "seconds": 70.75037884712219
+  },
+  "acquisition_sha256": "047be239ef0a9ed79e5a96da9b5da416dd175260e960fb6d27826c72f5876faa",
+  "source_files": {
+    "pets_v1": {
+      "checkpoint": "f3edfdb3b780e21a407a1aefec16634aef331fddaaacad0064d828f998d6e50c",
+      "original_records": "88efda909786478419329fc4b1ffafcf995238d7007f1b90fe141c2fd30af0fd",
+      "splits": "0f47c01d9daab457bc2c70b5965b68bf05ffa75c1b06601ad13a1452c2e05939"
+    },
+    "cub_v1": {
+      "checkpoint": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18",
+      "original_records": "f8d8e1d4fdefbb56a23ff6b15dd809d4b1dd63967e0ed72008935d77b6d282d9",
+      "splits": "f77dbd09430ed13bab246f0a763c3ef97ae2144bbed36277c916b0a5d5c714c9"
+    }
+  },
+  "seed": 20261104,
+  "shard_rows": 3334,
+  "assigned_donors": 1956,
+  "unique_crop_hashes": 1956,
+  "crop_operation": "Pillow ImageOps.fit RGB 224x224 bilinear center .5,.5",
+  "script_sha256": "a015500e5645d477f89eaf1420ff9a13d461dd3b78c514262adb43b740edd36c",
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ]
+}

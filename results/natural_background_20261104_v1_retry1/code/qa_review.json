@@ -1,0 +1,13 @@
+{
+  "state": "passed",
+  "classifier_outputs_seen": false,
+  "candidate_shard_rows_visually_reviewed": 3334,
+  "candidate_contact_sheets_reviewed": 17,
+  "excluded_candidate_rows": 183,
+  "final_composites_visually_reviewed": 64,
+  "final_composite_sheets_reviewed": 4,
+  "final_sample_obvious_competing_animals": "none observed",
+  "all_1956_foregrounds_pixel_exact": true,
+  "reviewer": "Codex visual inspection",
+  "limitations": "Thumbnail QA excludes obvious animals/animal depictions and artwork/graphics. It does not guarantee the absence of small or occluded objects, and permits photographs of objects, buildings, flowers, textures, and people."
+}

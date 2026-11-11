@@ -1,0 +1,314 @@
+{
+  "pets_v1": {
+    "dataset": "Oxford-IIIT Pet",
+    "pairs": 2979,
+    "pearson_JSD_NCD": 0.8628465401759329,
+    "spearman_JSD_NCD": 0.7622878078951778,
+    "spearman_H_JSD": 0.9166265793748645,
+    "spearman_H_NCD": 0.9492945604832922,
+    "JSD_smaller_fraction": 0.4931184961396442,
+    "NCD_smaller_fraction": 0.5068815038603558,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 2979,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.3848806414950854,
+        0.6621118828733294,
+        1.0130989751166475,
+        1.590062741540093,
+        3.1198712152683896
+      ],
+      "fraction_le_0_1": 0.0
+    },
+    "min_over_max": {
+      "valid": 2979,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.28970857538967376,
+        0.47804996496798124,
+        0.6455713283428701,
+        0.8086970559993973,
+        0.957907259435707
+      ],
+      "fraction_le_0_1": 0.0003356831151393085
+    }
+  },
+  "cub_v1": {
+    "dataset": "CUB-200-2011",
+    "pairs": 2889,
+    "pearson_JSD_NCD": 0.8238507914300186,
+    "spearman_JSD_NCD": 0.8051823855771701,
+    "spearman_H_JSD": 0.9140659594841293,
+    "spearman_H_NCD": 0.9719472847035429,
+    "JSD_smaller_fraction": 0.4254067151263413,
+    "NCD_smaller_fraction": 0.5745932848736587,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 2889,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.45575990416529844,
+        0.7606240876596985,
+        1.099954606021282,
+        1.707473822535356,
+        3.4007978122504072
+      ],
+      "fraction_le_0_1": 0.0
+    },
+    "min_over_max": {
+      "valid": 2889,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.28238229088844563,
+        0.49420472475840155,
+        0.6672064347857143,
+        0.8297087722221383,
+        0.9631056655598322
+      ],
+      "fraction_le_0_1": 0.0013845621322256837
+    }
+  },
+  "flowers102_external_v1": {
+    "dataset": "Oxford Flowers-102",
+    "pairs": 2961,
+    "pearson_JSD_NCD": 0.8247068204242678,
+    "spearman_JSD_NCD": 0.8279049477431106,
+    "spearman_H_JSD": 0.9667998218496012,
+    "spearman_H_NCD": 0.9355552761478172,
+    "JSD_smaller_fraction": 0.85612968591692,
+    "NCD_smaller_fraction": 0.14387031408308004,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 2961,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.19010266996318137,
+        0.31737745774966897,
+        0.4745050352971426,
+        0.7601051024189888,
+        1.5321139375945643
+      ],
+      "fraction_le_0_1": 0.002026342451874367
+    },
+    "min_over_max": {
+      "valid": 2961,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.1889988999153375,
+        0.31448885954614686,
+        0.45961599601758935,
+        0.6753445789483512,
+        0.9288365653905607
+      ],
+      "fraction_le_0_1": 0.002364066193853428
+    }
+  },
+  "caltech101_external_v1": {
+    "dataset": "Caltech-101",
+    "pairs": 2997,
+    "pearson_JSD_NCD": 0.8810379906859824,
+    "spearman_JSD_NCD": 0.8612046721908126,
+    "spearman_H_JSD": 0.9685156320452126,
+    "spearman_H_NCD": 0.9542838257277166,
+    "JSD_smaller_fraction": 0.7827827827827828,
+    "NCD_smaller_fraction": 0.2172172172172172,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 2997,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.23975254422940603,
+        0.4124971139844358,
+        0.5976499919819913,
+        0.9264633305034452,
+        1.8852236117433312
+      ],
+      "fraction_le_0_1": 0.002335669002335669
+    },
+    "min_over_max": {
+      "valid": 2997,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.23206440086845445,
+        0.3949803164113539,
+        0.5494274597552087,
+        0.7339922376110334,
+        0.9377875118036535
+      ],
+      "fraction_le_0_1": 0.00333667000333667
+    }
+  },
+  "voc2012_external_v1": {
+    "dataset": "PASCAL VOC 2012",
+    "pairs": 2502,
+    "pearson_JSD_NCD": 0.8652749519065386,
+    "spearman_JSD_NCD": 0.8001214854498593,
+    "spearman_H_JSD": 0.9465526776773853,
+    "spearman_H_NCD": 0.9404336361648781,
+    "JSD_smaller_fraction": 0.7122302158273381,
+    "NCD_smaller_fraction": 0.28776978417266186,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 2502,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.2484382512116663,
+        0.44226708642854007,
+        0.6707099609516565,
+        1.0794785835720673,
+        2.4174847298263056
+      ],
+      "fraction_le_0_1": 0.0
+    },
+    "min_over_max": {
+      "valid": 2502,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.22994217128634017,
+        0.39980307339740506,
+        0.5792956478613164,
+        0.7587989458431798,
+        0.9524836746483828
+      ],
+      "fraction_le_0_1": 0.0007993605115907274
+    }
+  },
+  "uecfoodpix_external_v1": {
+    "dataset": "UECFoodPixComplete",
+    "pairs": 1752,
+    "pearson_JSD_NCD": 0.8134536667458716,
+    "spearman_JSD_NCD": 0.7977095653953062,
+    "spearman_H_JSD": 0.9591605341276099,
+    "spearman_H_NCD": 0.9259200160818503,
+    "JSD_smaller_fraction": 0.8864155251141552,
+    "NCD_smaller_fraction": 0.11358447488584475,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 1752,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.18960658336766303,
+        0.3041946632084417,
+        0.4516413213355119,
+        0.6778565746565384,
+        1.3475625366014312
+      ],
+      "fraction_le_0_1": 0.0
+    },
+    "min_over_max": {
+      "valid": 1752,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.18960658336766303,
+        0.30131450183933184,
+        0.4424194804637781,
+        0.6340996021332748,
+        0.9099672411373836
+      ],
+      "fraction_le_0_1": 0.0
+    }
+  },
+  "pooled_development": {
+    "dataset": "Pooled development datasets",
+    "pairs": 5868,
+    "pearson_JSD_NCD": 0.8424986028020915,
+    "spearman_JSD_NCD": 0.8174392128913244,
+    "spearman_H_JSD": 0.932642477353191,
+    "spearman_H_NCD": 0.9649481668686549,
+    "JSD_smaller_fraction": 0.4597818677573279,
+    "NCD_smaller_fraction": 0.5402181322426721,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 5868,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.41349460234678465,
+        0.7110883908668729,
+        1.0625955160756084,
+        1.6533859403533044,
+        3.268213354068376
+      ],
+      "fraction_le_0_1": 0.0
+    },
+    "min_over_max": {
+      "valid": 5868,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.2881653225012238,
+        0.4845373869618793,
+        0.6559654366137193,
+        0.8185516445971814,
+        0.9608924344006504
+      ],
+      "fraction_le_0_1": 0.0008520790729379687
+    }
+  },
+  "pooled_all_six": {
+    "dataset": "Pooled all six datasets",
+    "pairs": 16080,
+    "pearson_JSD_NCD": 0.8278736688959292,
+    "spearman_JSD_NCD": 0.822187986187456,
+    "spearman_H_JSD": 0.9485279875279576,
+    "spearman_H_NCD": 0.9531788882430191,
+    "JSD_smaller_fraction": 0.6787313432835821,
+    "NCD_smaller_fraction": 0.3212686567164179,
+    "equal_fraction": 0.0,
+    "JSD_zero_count": 0,
+    "NCD_zero_count": 0,
+    "both_zero_count": 0,
+    "H_zero_fraction": 0.0,
+    "JSD_over_NCD": {
+      "valid": 16080,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.23470700710648437,
+        0.43886175083283796,
+        0.7060336402875571,
+        1.1791249060651272,
+        2.5412170041226734
+      ],
+      "fraction_le_0_1": 0.000808457711442786
+    },
+    "min_over_max": {
+      "valid": 16080,
+      "zero_denominator": 0,
+      "quantiles": [
+        0.22223918274936255,
+        0.3934170130362422,
+        0.5679581875553579,
+        0.7634167901566716,
+        0.9487124984545267
+      ],
+      "fraction_le_0_1": 0.0014925373134328358
+    }
+  }
+}

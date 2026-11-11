@@ -1,0 +1,55 @@
+{
+  "dataset": "UECFoodPixComplete",
+  "classes": 102,
+  "training_sources": 5766,
+  "evaluation_sources": 586,
+  "head": {
+    "C": 1,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "n_iter": [
+      165
+    ]
+  },
+  "seed": 20261011,
+  "batch": 16,
+  "bootstrap_seed": 20261104,
+  "bootstrap": 1000,
+  "backbone_unchanged": true,
+  "verification": {
+    "full_autograd_map_max_error": 0.0,
+    "closed_form_cam_max_error": 5.960464477539062e-07,
+    "n_sources": 4,
+    "valid_identity_maps": 4
+  },
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "threads": 4,
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cpu",
+  "sklearn": "1.7.2",
+  "source_hashes": {
+    "train": "57888c6a195cbf0bbe13002535c75ce76b1ef4f94e1e4cf70084e88d68599dc3",
+    "test": "246166674ee1267c4979359f0ebb2eb4f47452bd6e12d58c1d63d14c8f1b273f",
+    "original_records": "068852c1056825baa95b809828ce958c82164af14cd48c316ef296197d59e236",
+    "original_model": "83343f9c190729c4a3d6c2d8f15119b820a3ea38509739050b0749e4349ec024",
+    "source_selection": "973ee50d82ca6fd20086abe6f3a9ddbbfd30ff7e5eb8d987f59fa65fa37a393d"
+  },
+  "source_paths": {
+    "train": "/home/dell/rcam_reproduction_20260911/data/uecfoodpix_train.npz",
+    "test": "/home/dell/rcam_reproduction_20260911/data/uecfoodpix_test_selected.npz",
+    "original_records": "/home/dell/rcam_reproduction_20260911/runs/uecfoodpix_external_v1/external_records.jsonl",
+    "original_model": "/home/dell/rcam_reproduction_20260911/runs/uecfoodpix_external_v1/classifier.pt",
+    "source_selection": "/home/dell/rcam_reproduction_20260911/runs/uecfoodpix_external_v1/selected_ids.json"
+  },
+  "script_sha256": "01349c4e9a83f21cfb76060b665ca4465e66f7414d0ded3d71fc928d7922bf31",
+  "helper_sha256": "571e369652dea5e931ee3af3c427c236d5f62f5a651f40d4a616ae6fbce73cc2"
+}

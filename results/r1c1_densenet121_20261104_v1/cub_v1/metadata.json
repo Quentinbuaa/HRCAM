@@ -1,0 +1,89 @@
+{
+  "dataset": "CUB-200-2011",
+  "architecture": "DenseNet-121",
+  "weights": "DenseNet121_Weights.IMAGENET1K_V1",
+  "weights_url": "https://download.pytorch.org/models/densenet121-a639ec97.pth",
+  "weights_sha256": "a639ec97d7c33b07ae66f0b5fb7d0192f95a3b11b7576c66c0126c2a727c4395",
+  "gradcam_layer": "relu(features.norm5), final activated spatial tensor before global average pooling",
+  "head": {
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "n_iter": [
+      81
+    ],
+    "warnings": []
+  },
+  "source_counts": {
+    "training": 4194,
+    "calibration": 594,
+    "development": 1206,
+    "holdout": 1000
+  },
+  "seed": 20260914,
+  "bootstrap_seed": 20261104,
+  "bootstrap_resamples": 1000,
+  "batch_size": 16,
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "torch_threads": 4,
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cpu",
+  "sklearn": "1.7.2",
+  "numpy": "2.2.5",
+  "device": "NVIDIA GeForce RTX 5080",
+  "script_sha256": "571e369652dea5e931ee3af3c427c236d5f62f5a651f40d4a616ae6fbce73cc2",
+  "protocol_sha256": "b272fe9083ed1c2be7da3bf5b663c67c2551638e90fc9302af0c126a799504fe",
+  "original_files": {
+    "split": {
+      "path": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/splits.json",
+      "sha256_before": "f77dbd09430ed13bab246f0a763c3ef97ae2144bbed36277c916b0a5d5c714c9",
+      "sha256_after": "f77dbd09430ed13bab246f0a763c3ef97ae2144bbed36277c916b0a5d5c714c9"
+    },
+    "baseline_checkpoint": {
+      "path": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/classifier.pt",
+      "sha256_before": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18",
+      "sha256_after": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18"
+    },
+    "baseline_records": {
+      "path": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/holdout_records.jsonl",
+      "sha256_before": "f8d8e1d4fdefbb56a23ff6b15dd809d4b1dd63967e0ed72008935d77b6d282d9",
+      "sha256_after": "f8d8e1d4fdefbb56a23ff6b15dd809d4b1dd63967e0ed72008935d77b6d282d9"
+    },
+    "prepared_train": {
+      "path": "/home/dell/rcam_reproduction_20260911/data/cub_train.npz",
+      "sha256_before": "9e59b7ce7d16beab37075f12f6b33226f77b9f1f448c97bb549f931fc38903f2",
+      "sha256_after": "9e59b7ce7d16beab37075f12f6b33226f77b9f1f448c97bb549f931fc38903f2"
+    },
+    "prepared_test": {
+      "path": "/home/dell/rcam_reproduction_20260911/data/cub_test.npz",
+      "sha256_before": "c52d5faafa450a8936d689f0c85aedd6d98e235284bb7d886769d5eee82906c8",
+      "sha256_after": "c52d5faafa450a8936d689f0c85aedd6d98e235284bb7d886769d5eee82906c8"
+    }
+  },
+  "verification": {
+    "full_autograd_map_max_error": 0.0,
+    "closed_form_cam_max_error": 2.980232238769531e-07,
+    "n_sources": 4,
+    "valid_identity_maps": 4
+  },
+  "backbone_unchanged": true,
+  "heatmap_cache_layout": [
+    "source",
+    "black_own",
+    "black_fixed",
+    "gray_own",
+    "gray_fixed",
+    "white_own",
+    "white_fixed"
+  ]
+}

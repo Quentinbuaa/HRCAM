@@ -1,0 +1,11 @@
+dataset,probe,n,inconsistency,delta_median,auroc,auroc_ci_low,auroc_ci_high,ci_origin
+Oxford-IIIT Pet,Black,993,0.1843,0.0279,0.8779,0.8497777945511447,0.9063164560040069,new source-cluster bootstrap from cached Table3 scores
+Oxford-IIIT Pet,Gray,993,0.138,0.0267,0.9126,0.887151671418419,0.9357102378882973,new source-cluster bootstrap from cached Table3 scores
+Oxford-IIIT Pet,White,993,0.145,0.0302,0.8989,0.8717903742774705,0.9242700324934813,new source-cluster bootstrap from cached Table3 scores
+Oxford-IIIT Pet,Natural,993,0.16012084592145015,0.03274941399788752,0.9019501380028053,0.8753256192577691,0.9253438745717364,reused independently audited natural-background summary; fixed donor assignment
+Oxford-IIIT Pet,Constant color,2979,0.1558,0.0288,0.8953,0.8753158133762595,0.9154697112690974,reused Table3; exact replay verified
+CUB-200-2011,Black,963,0.7207,0.0187,0.785,0.751742452301717,0.8133787470547884,new source-cluster bootstrap from cached Table3 scores
+CUB-200-2011,Gray,963,0.5732,0.0204,0.8241,0.7959718803946311,0.8486834694638808,new source-cluster bootstrap from cached Table3 scores
+CUB-200-2011,White,963,0.6044,0.0202,0.8031,0.7744175116522652,0.8293801803224782,new source-cluster bootstrap from cached Table3 scores
+CUB-200-2011,Natural,963,0.7320872274143302,0.027988561250114934,0.8185606685359282,0.7893519405966298,0.8460066565153423,reused independently audited natural-background summary; fixed donor assignment
+CUB-200-2011,Constant color,2889,0.6327,0.0198,0.8066,0.7843526307448068,0.8259045921715192,reused Table3; exact replay verified

@@ -1,0 +1,12 @@
+{
+  "pets_v1": {
+    "score_file": "/home/dell/rcam_reproduction_20260911/runs/table3_revision_20261105_v1/pets_v1_scores.jsonl",
+    "score_sha256": "68e92118069a5f4fd0d12a04115dfe12adadfdb937cea0149ee881e199b7e624",
+    "Table3_summary_sha256": "f6b023a62c592ae226743c7ec3d0ceb952944b0c819212af54e3d0143433415e"
+  },
+  "cub_v1": {
+    "score_file": "/home/dell/rcam_reproduction_20260911/runs/table3_revision_20261105_v1/cub_v1_scores.jsonl",
+    "score_sha256": "ad5cd6595951b62b35f182fd90bff64d473af763e39ef94ae7f12bd5ee24c2cf",
+    "Table3_summary_sha256": "f6b023a62c592ae226743c7ec3d0ceb952944b0c819212af54e3d0143433415e"
+  }
+}

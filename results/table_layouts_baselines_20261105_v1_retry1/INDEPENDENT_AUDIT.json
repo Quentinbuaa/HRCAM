@@ -1,0 +1,60 @@
+{
+  "state": "passed",
+  "point_entries": 260,
+  "new_intervals": 272,
+  "explicit_distance_checks": 240,
+  "max_error": 2.3869795029440866e-15,
+  "cases": {
+    "densenet121__pets_v1": {
+      "pairs": 2979,
+      "sources": 993,
+      "distance_max_error": 4.3298697960381105e-15
+    },
+    "densenet121__cub_v1": {
+      "pairs": 2889,
+      "sources": 963,
+      "distance_max_error": 3.6637359812630166e-15
+    },
+    "densenet121__flowers102_external_v1": {
+      "pairs": 2961,
+      "sources": 987,
+      "distance_max_error": 4.9960036108132044e-15
+    },
+    "densenet121__caltech101_external_v1": {
+      "pairs": 2997,
+      "sources": 999,
+      "distance_max_error": 4.6629367034256575e-15
+    },
+    "densenet121__voc2012_external_v1": {
+      "pairs": 2502,
+      "sources": 834,
+      "distance_max_error": 6.439293542825908e-15
+    },
+    "densenet121__uecfoodpix_external_v1": {
+      "pairs": 1752,
+      "sources": 584,
+      "distance_max_error": 4.3298697960381105e-15
+    },
+    "resnet18__flowers102_external_v1": {
+      "pairs": 2961,
+      "sources": 987,
+      "distance_max_error": 4.551914400963142e-15
+    },
+    "resnet18__caltech101_external_v1": {
+      "pairs": 2997,
+      "sources": 999,
+      "distance_max_error": 5.329070518200751e-15
+    },
+    "resnet18__voc2012_external_v1": {
+      "pairs": 2502,
+      "sources": 834,
+      "distance_max_error": 3.552713678800501e-15
+    },
+    "resnet18__uecfoodpix_external_v1": {
+      "pairs": 1752,
+      "sources": 584,
+      "distance_max_error": 3.885780586188048e-15
+    }
+  },
+  "seconds": 167.23019671440125
+}

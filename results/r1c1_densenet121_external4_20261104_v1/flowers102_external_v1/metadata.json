@@ -1,0 +1,55 @@
+{
+  "dataset": "Oxford Flowers-102",
+  "classes": 102,
+  "training_sources": 2040,
+  "evaluation_sources": 1020,
+  "head": {
+    "C": 1,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "n_iter": [
+      70
+    ]
+  },
+  "seed": 20261011,
+  "batch": 16,
+  "bootstrap_seed": 20261104,
+  "bootstrap": 1000,
+  "backbone_unchanged": true,
+  "verification": {
+    "full_autograd_map_max_error": 0.0,
+    "closed_form_cam_max_error": 3.5762786865234375e-07,
+    "n_sources": 4,
+    "valid_identity_maps": 4
+  },
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "threads": 4,
+  "torch": "2.11.0+cu128",
+  "torchvision": "0.26.0+cpu",
+  "sklearn": "1.7.2",
+  "source_hashes": {
+    "train": "827d9b1469897136119c62c955bad04f203d595130a1409a44e6e90aa81d6ad9",
+    "test": "c880b67cf3e909ce405e463115f43bbe35059185589cdbaaba747593d6e01ecc",
+    "original_records": "eab605408d2d4b96b1707f7ea17350ba892914b000c5b66e6c46f1b117cbd401",
+    "original_model": "dd081faf499b2f1af171a26fa5b60bb95b39f2313dfc6648f54536befa473088",
+    "source_selection": "88ee6455abf23e99dedc81bbcbd7785c2863ba6fb3869e483e10f69e16340f6e"
+  },
+  "source_paths": {
+    "train": "/home/dell/rcam_reproduction_20260911/data/flowers_trainval.npz",
+    "test": "/home/dell/rcam_reproduction_20260911/data/flowers_test_selected.npz",
+    "original_records": "/home/dell/rcam_reproduction_20260911/runs/flowers102_external_v1/external_records.jsonl",
+    "original_model": "/home/dell/rcam_reproduction_20260911/runs/flowers102_external_v1/classifier.pt",
+    "source_selection": "/home/dell/rcam_reproduction_20260911/runs/flowers102_external_v1/selected_ids.json"
+  },
+  "script_sha256": "01349c4e9a83f21cfb76060b665ca4465e66f7414d0ded3d71fc928d7922bf31",
+  "helper_sha256": "571e369652dea5e931ee3af3c427c236d5f62f5a651f40d4a616ae6fbce73cc2"
+}

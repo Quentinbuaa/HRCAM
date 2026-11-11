@@ -1,0 +1,48 @@
+{
+  "pets_v1": {
+    "input_paths": {
+      "holdout_records.jsonl": "/home/dell/rcam_reproduction_20260911/runs/pets_v1/holdout_records.jsonl",
+      "frozen_analysis.json": "/home/dell/rcam_reproduction_20260911/runs/pets_v1/frozen_analysis.json",
+      "holdout_heatmaps.npz": "/home/dell/rcam_reproduction_20260911/runs/pets_v1/holdout_heatmaps.npz",
+      "classifier.pt": "/home/dell/rcam_reproduction_20260911/runs/pets_v1/classifier.pt",
+      "transport": "/home/dell/rcam_reproduction_20260911/results/rq1_v3/pets_v1_holdout_transport_own.jsonl"
+    },
+    "hashes_before": {
+      "holdout_records.jsonl": "88efda909786478419329fc4b1ffafcf995238d7007f1b90fe141c2fd30af0fd",
+      "frozen_analysis.json": "7714900b08128a8eebd35efedf53707d568e0e16245947b2418c70cce842bcd9",
+      "holdout_heatmaps.npz": "2b8ad1c0abbcbfca68313119b512b0309e0668ceb1e591b3a5dfe280d688e7bc",
+      "classifier.pt": "f3edfdb3b780e21a407a1aefec16634aef331fddaaacad0064d828f998d6e50c",
+      "transport": "f92095566db855ea7b2cba80f996d242f331aebff9d70ba00225164091c81d1d"
+    },
+    "hashes_after": {
+      "holdout_records.jsonl": "88efda909786478419329fc4b1ffafcf995238d7007f1b90fe141c2fd30af0fd",
+      "frozen_analysis.json": "7714900b08128a8eebd35efedf53707d568e0e16245947b2418c70cce842bcd9",
+      "holdout_heatmaps.npz": "2b8ad1c0abbcbfca68313119b512b0309e0668ceb1e591b3a5dfe280d688e7bc",
+      "classifier.pt": "f3edfdb3b780e21a407a1aefec16634aef331fddaaacad0064d828f998d6e50c",
+      "transport": "f92095566db855ea7b2cba80f996d242f331aebff9d70ba00225164091c81d1d"
+    }
+  },
+  "cub_v1": {
+    "input_paths": {
+      "holdout_records.jsonl": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/holdout_records.jsonl",
+      "frozen_analysis.json": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/frozen_analysis.json",
+      "holdout_heatmaps.npz": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/holdout_heatmaps.npz",
+      "classifier.pt": "/home/dell/rcam_reproduction_20260911/runs/cub_v1/classifier.pt",
+      "transport": "/home/dell/rcam_reproduction_20260911/results/rq1_v3/cub_v1_holdout_transport_own.jsonl"
+    },
+    "hashes_before": {
+      "holdout_records.jsonl": "f8d8e1d4fdefbb56a23ff6b15dd809d4b1dd63967e0ed72008935d77b6d282d9",
+      "frozen_analysis.json": "340980b0379d4168d84f40d1426fde9c1276fb74edb62b74ab79776069320f18",
+      "holdout_heatmaps.npz": "044fd9f5aa59178ca17d7d812c12f13eeff25b268891100ace35517fc9fa4eed",
+      "classifier.pt": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18",
+      "transport": "f9d652eb709a847631edff58b8bcc89a54527b185ffe1964bf88b8f6dbfabce2"
+    },
+    "hashes_after": {
+      "holdout_records.jsonl": "f8d8e1d4fdefbb56a23ff6b15dd809d4b1dd63967e0ed72008935d77b6d282d9",
+      "frozen_analysis.json": "340980b0379d4168d84f40d1426fde9c1276fb74edb62b74ab79776069320f18",
+      "holdout_heatmaps.npz": "044fd9f5aa59178ca17d7d812c12f13eeff25b268891100ace35517fc9fa4eed",
+      "classifier.pt": "9784845363e53b3a77f3892b27ff0969152afd0e7200dc304f4b1cecede5dc18",
+      "transport": "f9d652eb709a847631edff58b8bcc89a54527b185ffe1964bf88b8f6dbfabce2"
+    }
+  }
+}

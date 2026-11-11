@@ -1,0 +1,25 @@
+{
+  "time": 1793808531.96466,
+  "protocol_sha256": "832f6a701037d05a31a39d73eac74f16f0312043853aabffa1275a8d9b8ed7e4",
+  "code_files": {
+    "PROTOCOL.md": "832f6a701037d05a31a39d73eac74f16f0312043853aabffa1275a8d9b8ed7e4",
+    "analyze_results.py": "8e6e379e96d026bede924baf52909fba67dd5a180af9217ea072bec12d761be0",
+    "audit_results.py": "ccbb39af2620d3e656090d86e0e7b26bd5e03d0d4ebc6d2d23787d7e8cb6eab1",
+    "common.py": "74d35ad8e4e03a3422c67e06ed91da41e7195a3ecb1c92507425d9068eca5c5b",
+    "make_report.py": "c4bce4085e211131048a51403dba062f709e22aafdc5b1f21eff69ff2a773503",
+    "run_extraction.py": "3f553c4c1669af007f8592a7204261b3bce4e904e753be11fbd06d29156ed319",
+    "run_pipeline.py": "ad26f42072bfe3b3d914053a83ba135285e1ad8d2134a912cd065ce818a4b3b9"
+  },
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "scope": "Fixed ground-truth Table 8 diagnostic only",
+  "manuscript_edited": false
+}

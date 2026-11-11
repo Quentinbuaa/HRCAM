@@ -1,0 +1,1028 @@
+{
+  "pets_v1": {
+    "targets": {
+      "own": {
+        "all_valid": {
+          "GradCAM_layer4": {
+            "state": "complete",
+            "pairs": 2979,
+            "sources": 993,
+            "inconsistent": 464,
+            "prevalence": 0.15575696542463915,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.895304037841914,
+                "ap": 0.6887734281900854
+              },
+              "JSD": {
+                "auroc": 0.8778330019880715,
+                "ap": 0.635390904138907
+              },
+              "NCD": {
+                "auroc": 0.8816189072461782,
+                "ap": 0.6776644107893142
+              }
+            }
+          },
+          "GradCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2968,
+            "sources": 992,
+            "inconsistent": 461,
+            "prevalence": 0.1553234501347709,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.7056476140126519,
+                "ap": 0.3057212673271222
+              },
+              "JSD": {
+                "auroc": 0.6740069237804429,
+                "ap": 0.2563394668091307
+              },
+              "NCD": {
+                "auroc": 0.808006562103334,
+                "ap": 0.44163532373695347
+              }
+            }
+          },
+          "LayerCAM_layer4": {
+            "state": "complete",
+            "pairs": 2979,
+            "sources": 993,
+            "inconsistent": 464,
+            "prevalence": 0.15575696542463915,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.7357364434085144,
+                "ap": 0.3911305860111044
+              },
+              "JSD": {
+                "auroc": 0.7292520737643107,
+                "ap": 0.3519886827469846
+              },
+              "NCD": {
+                "auroc": 0.7212672242407623,
+                "ap": 0.40022048537235183
+              }
+            }
+          },
+          "LayerCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2979,
+            "sources": 993,
+            "inconsistent": 464,
+            "prevalence": 0.15575696542463915,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.8377125179954755,
+                "ap": 0.4783288993694695
+              },
+              "JSD": {
+                "auroc": 0.8073275862068965,
+                "ap": 0.3974996746674364
+              },
+              "NCD": {
+                "auroc": 0.8172525193665594,
+                "ap": 0.5088031593209921
+              }
+            }
+          }
+        },
+        "coverage": {
+          "GradCAM_layer4": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2979,
+            "invalid_pairs": 0,
+            "valid_sources": 993,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "GradCAM_layer3_0": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2968,
+            "invalid_pairs": 11,
+            "valid_sources": 992,
+            "invalid_consistent": 8,
+            "invalid_inconsistent": 3
+          },
+          "LayerCAM_layer4": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2979,
+            "invalid_pairs": 0,
+            "valid_sources": 993,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "LayerCAM_layer3_0": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2979,
+            "invalid_pairs": 0,
+            "valid_sources": 993,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          }
+        },
+        "common": {
+          "state": "complete",
+          "pairs": 2968,
+          "sources": 992,
+          "inconsistent": 461,
+          "prevalence": 0.1553234501347709,
+          "ranking": {
+            "GradCAM_layer4": {
+              "auroc": 0.895188050465205,
+              "ap": 0.6887715677660928,
+              "auroc_ci95": [
+                0.8743769850758711,
+                0.914660143118954
+              ],
+              "ap_ci95": [
+                0.6312964397737845,
+                0.7425921266400706
+              ]
+            },
+            "GradCAM_layer3_0": {
+              "auroc": 0.7056476140126519,
+              "ap": 0.3057212673271222,
+              "auroc_ci95": [
+                0.6700530521820716,
+                0.7393727021687185
+              ],
+              "ap_ci95": [
+                0.2562794952240194,
+                0.36198088569513553
+              ]
+            },
+            "LayerCAM_layer4": {
+              "auroc": 0.7352575478465071,
+              "ap": 0.3901972499149032,
+              "auroc_ci95": [
+                0.7009160353974027,
+                0.77005243122995
+              ],
+              "ap_ci95": [
+                0.32855770396859674,
+                0.4601651889480597
+              ]
+            },
+            "LayerCAM_layer3_0": {
+              "auroc": 0.838319949261374,
+              "ap": 0.4786861282432687,
+              "auroc_ci95": [
+                0.8122896183185342,
+                0.8633727949837839
+              ],
+              "ap_ci95": [
+                0.4085024165925367,
+                0.5488842237934939
+              ]
+            }
+          },
+          "paired_differences": {
+            "GradCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.18954043645255314,
+                "ci95": [
+                  -0.22865750926774944,
+                  -0.15074018346594611
+                ]
+              },
+              "ap": {
+                "difference": -0.38305030043897065,
+                "ci95": [
+                  -0.445625963815034,
+                  -0.3122330351957156
+                ]
+              }
+            },
+            "LayerCAM_layer4_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.1599305026186979,
+                "ci95": [
+                  -0.18820144667752242,
+                  -0.13136071723316262
+                ]
+              },
+              "ap": {
+                "difference": -0.29857431785118965,
+                "ci95": [
+                  -0.35103558763730747,
+                  -0.24506643667259478
+                ]
+              }
+            },
+            "LayerCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.05686810120383101,
+                "ci95": [
+                  -0.08367453678616633,
+                  -0.029464965887091507
+                ]
+              },
+              "ap": {
+                "difference": -0.2100854395228241,
+                "ci95": [
+                  -0.27073017706267266,
+                  -0.14077680481559832
+                ]
+              }
+            }
+          },
+          "bootstrap_resamples": 1000,
+          "bootstrap_seed": 20261105
+        },
+        "agreement": {
+          "GradCAM_layer3_0": {
+            "spearman_with_original": 0.26137787290032966,
+            "mean_absolute_score_difference": 0.19084872935738256,
+            "median_absolute_score_difference": 0.14379254223226873,
+            "p95_absolute_score_difference": 0.5132137708899923,
+            "maximum_absolute_score_difference": 0.7058036587924585
+          },
+          "LayerCAM_layer4": {
+            "spearman_with_original": 0.6678302604033635,
+            "mean_absolute_score_difference": 0.010254001463565275,
+            "median_absolute_score_difference": 0.004000135642016204,
+            "p95_absolute_score_difference": 0.0432788419562797,
+            "maximum_absolute_score_difference": 0.22585907257908444
+          },
+          "LayerCAM_layer3_0": {
+            "spearman_with_original": 0.5323984561378735,
+            "mean_absolute_score_difference": 0.016220884652729993,
+            "median_absolute_score_difference": 0.012322932781926046,
+            "p95_absolute_score_difference": 0.039405742485466425,
+            "maximum_absolute_score_difference": 0.21928454606087694
+          }
+        }
+      },
+      "fixed": {
+        "all_valid": {
+          "GradCAM_layer4": {
+            "state": "complete",
+            "pairs": 2979,
+            "sources": 993,
+            "inconsistent": 464,
+            "prevalence": 0.15575696542463915,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.7972981079042983,
+                "ap": 0.5095241765313248
+              },
+              "JSD": {
+                "auroc": 0.8278261465688626,
+                "ap": 0.5643142833819749
+              },
+              "NCD": {
+                "auroc": 0.7456613765681771,
+                "ap": 0.438005548447852
+              }
+            }
+          },
+          "GradCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2964,
+            "sources": 991,
+            "inconsistent": 457,
+            "prevalence": 0.15418353576248314,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6397299814349143,
+                "ap": 0.2505163838923643
+              },
+              "JSD": {
+                "auroc": 0.6387698688748091,
+                "ap": 0.25340719100306214
+              },
+              "NCD": {
+                "auroc": 0.618394534690176,
+                "ap": 0.2214727399212803
+              }
+            }
+          },
+          "LayerCAM_layer4": {
+            "state": "complete",
+            "pairs": 2979,
+            "sources": 993,
+            "inconsistent": 464,
+            "prevalence": 0.15575696542463915,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6644752176595599,
+                "ap": 0.3043429230024132
+              },
+              "JSD": {
+                "auroc": 0.6719836155480908,
+                "ap": 0.29384853526940174
+              },
+              "NCD": {
+                "auroc": 0.6403569959553027,
+                "ap": 0.28749265991691886
+              }
+            }
+          },
+          "LayerCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2979,
+            "sources": 993,
+            "inconsistent": 464,
+            "prevalence": 0.15575696542463915,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.668210564201001,
+                "ap": 0.28075438399153835
+              },
+              "JSD": {
+                "auroc": 0.6696493453074654,
+                "ap": 0.27185269874362866
+              },
+              "NCD": {
+                "auroc": 0.6358015698909989,
+                "ap": 0.2606135614877629
+              }
+            }
+          }
+        },
+        "coverage": {
+          "GradCAM_layer4": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2979,
+            "invalid_pairs": 0,
+            "valid_sources": 993,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "GradCAM_layer3_0": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2964,
+            "invalid_pairs": 15,
+            "valid_sources": 991,
+            "invalid_consistent": 8,
+            "invalid_inconsistent": 7
+          },
+          "LayerCAM_layer4": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2979,
+            "invalid_pairs": 0,
+            "valid_sources": 993,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "LayerCAM_layer3_0": {
+            "mask_eligible_pairs": 2979,
+            "valid_pairs": 2979,
+            "invalid_pairs": 0,
+            "valid_sources": 993,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          }
+        },
+        "common": {
+          "state": "complete",
+          "pairs": 2964,
+          "sources": 991,
+          "inconsistent": 457,
+          "prevalence": 0.15418353576248314,
+          "ranking": {
+            "GradCAM_layer4": {
+              "auroc": 0.7960127398208431,
+              "ap": 0.5053133011538156,
+              "auroc_ci95": [
+                0.7625303443463018,
+                0.8255212497405292
+              ],
+              "ap_ci95": [
+                0.4347822475410379,
+                0.5740747421347965
+              ]
+            },
+            "GradCAM_layer3_0": {
+              "auroc": 0.6397299814349143,
+              "ap": 0.2505163838923643,
+              "auroc_ci95": [
+                0.5986322531140682,
+                0.6809617970355117
+              ],
+              "ap_ci95": [
+                0.2124084584533869,
+                0.2999626965337904
+              ]
+            },
+            "LayerCAM_layer4": {
+              "auroc": 0.6631165777398775,
+              "ap": 0.2991349489043867,
+              "auroc_ci95": [
+                0.6201439670102943,
+                0.6992655653284214
+              ],
+              "ap_ci95": [
+                0.23933387151494834,
+                0.36244872121190447
+              ]
+            },
+            "LayerCAM_layer3_0": {
+              "auroc": 0.6670320913259067,
+              "ap": 0.2751571916803424,
+              "auroc_ci95": [
+                0.629391283671554,
+                0.7024056386129696
+              ],
+              "ap_ci95": [
+                0.22378627227083348,
+                0.34152502598914836
+              ]
+            }
+          },
+          "paired_differences": {
+            "GradCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.15628275838592876,
+                "ci95": [
+                  -0.20545506786594542,
+                  -0.1110412339388237
+                ]
+              },
+              "ap": {
+                "difference": -0.25479691726145126,
+                "ci95": [
+                  -0.30962669988270025,
+                  -0.1914535995337203
+                ]
+              }
+            },
+            "LayerCAM_layer4_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.13289616208096555,
+                "ci95": [
+                  -0.16229146221184312,
+                  -0.10201880071993913
+                ]
+              },
+              "ap": {
+                "difference": -0.20617835224942888,
+                "ci95": [
+                  -0.2526867007134298,
+                  -0.15544045119768896
+                ]
+              }
+            },
+            "LayerCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.1289806484949364,
+                "ci95": [
+                  -0.1693523127017144,
+                  -0.08894194539071001
+                ]
+              },
+              "ap": {
+                "difference": -0.23015610947347315,
+                "ci95": [
+                  -0.2860468199256058,
+                  -0.16517716506669944
+                ]
+              }
+            }
+          },
+          "bootstrap_resamples": 1000,
+          "bootstrap_seed": 20261105
+        },
+        "agreement": {
+          "GradCAM_layer3_0": {
+            "spearman_with_original": 0.22309856003328415,
+            "mean_absolute_score_difference": 0.18736152849251755,
+            "median_absolute_score_difference": 0.14023032952740844,
+            "p95_absolute_score_difference": 0.4982443898576246,
+            "maximum_absolute_score_difference": 0.7058036587924585
+          },
+          "LayerCAM_layer4": {
+            "spearman_with_original": 0.6523394972026463,
+            "mean_absolute_score_difference": 0.008523855730843568,
+            "median_absolute_score_difference": 0.003754361022630536,
+            "p95_absolute_score_difference": 0.03074014327664544,
+            "maximum_absolute_score_difference": 0.38984039450235386
+          },
+          "LayerCAM_layer3_0": {
+            "spearman_with_original": 0.43986432628577193,
+            "mean_absolute_score_difference": 0.015427061076603505,
+            "median_absolute_score_difference": 0.012015512076130237,
+            "p95_absolute_score_difference": 0.03688019576482451,
+            "maximum_absolute_score_difference": 0.40158753688346754
+          }
+        }
+      }
+    },
+    "consistent_pair_identity_checks": 10088
+  },
+  "cub_v1": {
+    "targets": {
+      "own": {
+        "all_valid": {
+          "GradCAM_layer4": {
+            "state": "complete",
+            "pairs": 2889,
+            "sources": 963,
+            "inconsistent": 1828,
+            "prevalence": 0.6327448944271374,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.806606623947929,
+                "ap": 0.8684202740450485
+              },
+              "JSD": {
+                "auroc": 0.7796265857114277,
+                "ap": 0.8492273329803633
+              },
+              "NCD": {
+                "auroc": 0.7939477434483384,
+                "ap": 0.8585567946671898
+              }
+            }
+          },
+          "GradCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2863,
+            "sources": 957,
+            "inconsistent": 1804,
+            "prevalence": 0.6301082780300384,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6664839858545379,
+                "ap": 0.7549774605185859
+              },
+              "JSD": {
+                "auroc": 0.6373429939553066,
+                "ap": 0.7268941647246947
+              },
+              "NCD": {
+                "auroc": 0.733170333892368,
+                "ap": 0.8079486070929162
+              }
+            }
+          },
+          "LayerCAM_layer4": {
+            "state": "complete",
+            "pairs": 2889,
+            "sources": 963,
+            "inconsistent": 1828,
+            "prevalence": 0.6327448944271374,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6567144863542713,
+                "ap": 0.749545436512788
+              },
+              "JSD": {
+                "auroc": 0.6562122971392745,
+                "ap": 0.7522662525566017
+              },
+              "NCD": {
+                "auroc": 0.6337736168141611,
+                "ap": 0.7321433600268541
+              }
+            }
+          },
+          "LayerCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2889,
+            "sources": 963,
+            "inconsistent": 1828,
+            "prevalence": 0.6327448944271374,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.7352905994716186,
+                "ap": 0.8074180167483685
+              },
+              "JSD": {
+                "auroc": 0.7072706067724391,
+                "ap": 0.7867457350391373
+              },
+              "NCD": {
+                "auroc": 0.7252571270652144,
+                "ap": 0.8024244412183723
+              }
+            }
+          }
+        },
+        "coverage": {
+          "GradCAM_layer4": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2889,
+            "invalid_pairs": 0,
+            "valid_sources": 963,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "GradCAM_layer3_0": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2863,
+            "invalid_pairs": 26,
+            "valid_sources": 957,
+            "invalid_consistent": 2,
+            "invalid_inconsistent": 24
+          },
+          "LayerCAM_layer4": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2889,
+            "invalid_pairs": 0,
+            "valid_sources": 963,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "LayerCAM_layer3_0": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2889,
+            "invalid_pairs": 0,
+            "valid_sources": 963,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          }
+        },
+        "common": {
+          "state": "complete",
+          "pairs": 2863,
+          "sources": 957,
+          "inconsistent": 1804,
+          "prevalence": 0.6301082780300384,
+          "ranking": {
+            "GradCAM_layer4": {
+              "auroc": 0.8054114348766459,
+              "ap": 0.8659803761319282,
+              "auroc_ci95": [
+                0.7843031775697064,
+                0.8263899975110907
+              ],
+              "ap_ci95": [
+                0.8463447502299946,
+                0.8848728679425041
+              ]
+            },
+            "GradCAM_layer3_0": {
+              "auroc": 0.6664839858545379,
+              "ap": 0.7549774605185859,
+              "auroc_ci95": [
+                0.6403192851613949,
+                0.6918189734667527
+              ],
+              "ap_ci95": [
+                0.7254511433912072,
+                0.7862814551041428
+              ]
+            },
+            "LayerCAM_layer4": {
+              "auroc": 0.6554351990854443,
+              "ap": 0.7460146665565782,
+              "auroc_ci95": [
+                0.6269655272893255,
+                0.6814970101204878
+              ],
+              "ap_ci95": [
+                0.7150244964789675,
+                0.7749694424308586
+              ]
+            },
+            "LayerCAM_layer3_0": {
+              "auroc": 0.7335257501428993,
+              "ap": 0.8036820945232599,
+              "auroc_ci95": [
+                0.7078822584022892,
+                0.7570975789016355
+              ],
+              "ap_ci95": [
+                0.7736023323386737,
+                0.8304206550198185
+              ]
+            }
+          },
+          "paired_differences": {
+            "GradCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.13892744902210796,
+                "ci95": [
+                  -0.17094806287555336,
+                  -0.10501855715098042
+                ]
+              },
+              "ap": {
+                "difference": -0.1110029156133423,
+                "ci95": [
+                  -0.13970270361330894,
+                  -0.08232257470224719
+                ]
+              }
+            },
+            "LayerCAM_layer4_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.14997623579120156,
+                "ci95": [
+                  -0.1740589214894713,
+                  -0.12774801792224044
+                ]
+              },
+              "ap": {
+                "difference": -0.11996570957535002,
+                "ci95": [
+                  -0.14329038887305687,
+                  -0.0988620315400644
+                ]
+              }
+            },
+            "LayerCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.07188568473374657,
+                "ci95": [
+                  -0.09877040425632472,
+                  -0.04867462814027843
+                ]
+              },
+              "ap": {
+                "difference": -0.06229828160866835,
+                "ci95": [
+                  -0.08546558388435632,
+                  -0.03987766459483301
+                ]
+              }
+            }
+          },
+          "bootstrap_resamples": 1000,
+          "bootstrap_seed": 20261105
+        },
+        "agreement": {
+          "GradCAM_layer3_0": {
+            "spearman_with_original": 0.15732345347694673,
+            "mean_absolute_score_difference": 0.24224553806970497,
+            "median_absolute_score_difference": 0.20317951352766603,
+            "p95_absolute_score_difference": 0.5691303198871362,
+            "maximum_absolute_score_difference": 0.7262137615848742
+          },
+          "LayerCAM_layer4": {
+            "spearman_with_original": 0.6161924027073686,
+            "mean_absolute_score_difference": 0.01895440947001482,
+            "median_absolute_score_difference": 0.010112109703563583,
+            "p95_absolute_score_difference": 0.07069905412728365,
+            "maximum_absolute_score_difference": 0.23170974818053186
+          },
+          "LayerCAM_layer3_0": {
+            "spearman_with_original": 0.4658062575464602,
+            "mean_absolute_score_difference": 0.022524496234891975,
+            "median_absolute_score_difference": 0.01802518286748611,
+            "p95_absolute_score_difference": 0.05739878183755962,
+            "maximum_absolute_score_difference": 0.24097639063436088
+          }
+        }
+      },
+      "fixed": {
+        "all_valid": {
+          "GradCAM_layer4": {
+            "state": "complete",
+            "pairs": 2887,
+            "sources": 963,
+            "inconsistent": 1826,
+            "prevalence": 0.6324904745410461,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.7657844126054385,
+                "ap": 0.8483980736432873
+              },
+              "JSD": {
+                "auroc": 0.7894430949743624,
+                "ap": 0.8712433433389254
+              },
+              "NCD": {
+                "auroc": 0.7292976206083867,
+                "ap": 0.8164021934524435
+              }
+            }
+          },
+          "GradCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2836,
+            "sources": 956,
+            "inconsistent": 1777,
+            "prevalence": 0.6265867418899859,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6599742911603146,
+                "ap": 0.7561722300288587
+              },
+              "JSD": {
+                "auroc": 0.657045247664125,
+                "ap": 0.7539376257757784
+              },
+              "NCD": {
+                "auroc": 0.6010341989209513,
+                "ap": 0.7045323549282418
+              }
+            }
+          },
+          "LayerCAM_layer4": {
+            "state": "complete",
+            "pairs": 2889,
+            "sources": 963,
+            "inconsistent": 1828,
+            "prevalence": 0.6327448944271374,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6033746702772043,
+                "ap": 0.7092926562996429
+              },
+              "JSD": {
+                "auroc": 0.6176721106589919,
+                "ap": 0.7247874467533035
+              },
+              "NCD": {
+                "auroc": 0.5741528263868981,
+                "ap": 0.6842472528751196
+              }
+            }
+          },
+          "LayerCAM_layer3_0": {
+            "state": "complete",
+            "pairs": 2889,
+            "sources": 963,
+            "inconsistent": 1828,
+            "prevalence": 0.6327448944271374,
+            "ranking": {
+              "HRCAM": {
+                "auroc": 0.6359081787752359,
+                "ap": 0.7393099448474654
+              },
+              "JSD": {
+                "auroc": 0.6488310437492395,
+                "ap": 0.7510350941147401
+              },
+              "NCD": {
+                "auroc": 0.5997299315084031,
+                "ap": 0.7096448765583172
+              }
+            }
+          }
+        },
+        "coverage": {
+          "GradCAM_layer4": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2887,
+            "invalid_pairs": 2,
+            "valid_sources": 963,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 2
+          },
+          "GradCAM_layer3_0": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2836,
+            "invalid_pairs": 53,
+            "valid_sources": 956,
+            "invalid_consistent": 2,
+            "invalid_inconsistent": 51
+          },
+          "LayerCAM_layer4": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2889,
+            "invalid_pairs": 0,
+            "valid_sources": 963,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          },
+          "LayerCAM_layer3_0": {
+            "mask_eligible_pairs": 2889,
+            "valid_pairs": 2889,
+            "invalid_pairs": 0,
+            "valid_sources": 963,
+            "invalid_consistent": 0,
+            "invalid_inconsistent": 0
+          }
+        },
+        "common": {
+          "state": "complete",
+          "pairs": 2834,
+          "sources": 956,
+          "inconsistent": 1775,
+          "prevalence": 0.6263232180663373,
+          "ranking": {
+            "GradCAM_layer4": {
+              "auroc": 0.762817965393874,
+              "ap": 0.8426816594568052,
+              "auroc_ci95": [
+                0.7375495932942671,
+                0.7834477604983506
+              ],
+              "ap_ci95": [
+                0.8187961980036966,
+                0.8635443395756923
+              ]
+            },
+            "GradCAM_layer3_0": {
+              "auroc": 0.6599273829948529,
+              "ap": 0.7559025068170122,
+              "auroc_ci95": [
+                0.633235976659826,
+                0.6869125365966477
+              ],
+              "ap_ci95": [
+                0.726477768692081,
+                0.7863632580903821
+              ]
+            },
+            "LayerCAM_layer4": {
+              "auroc": 0.6025386692202317,
+              "ap": 0.7039840626799538,
+              "auroc_ci95": [
+                0.5730197414365261,
+                0.629664883435969
+              ],
+              "ap_ci95": [
+                0.6694746109068591,
+                0.7357236441489483
+              ]
+            },
+            "LayerCAM_layer3_0": {
+              "auroc": 0.6344848315578077,
+              "ap": 0.733377383307921,
+              "auroc_ci95": [
+                0.6054932641839932,
+                0.660602003554947
+              ],
+              "ap_ci95": [
+                0.701462906069735,
+                0.7651204032040101
+              ]
+            }
+          },
+          "paired_differences": {
+            "GradCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.10289058239902116,
+                "ci95": [
+                  -0.13548050871073372,
+                  -0.07025506365241602
+                ]
+              },
+              "ap": {
+                "difference": -0.08677915263979297,
+                "ci95": [
+                  -0.1140519603072883,
+                  -0.05924422707110513
+                ]
+              }
+            },
+            "LayerCAM_layer4_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.16027929617364234,
+                "ci95": [
+                  -0.1853010337866009,
+                  -0.137480708223057
+                ]
+              },
+              "ap": {
+                "difference": -0.13869759677685134,
+                "ci95": [
+                  -0.16008369865255304,
+                  -0.11717916048951785
+                ]
+              }
+            },
+            "LayerCAM_layer3_0_minus_GradCAM_layer4": {
+              "auroc": {
+                "difference": -0.12833313383606637,
+                "ci95": [
+                  -0.15580119021665534,
+                  -0.101453163382885
+                ]
+              },
+              "ap": {
+                "difference": -0.10930427614888416,
+                "ci95": [
+                  -0.13272285903084602,
+                  -0.08499289582133965
+                ]
+              }
+            }
+          },
+          "bootstrap_resamples": 1000,
+          "bootstrap_seed": 20261105
+        },
+        "agreement": {
+          "GradCAM_layer3_0": {
+            "spearman_with_original": 0.24531069101644593,
+            "mean_absolute_score_difference": 0.24132448163452305,
+            "median_absolute_score_difference": 0.20364269592537662,
+            "p95_absolute_score_difference": 0.5686013012006712,
+            "maximum_absolute_score_difference": 0.7660245338606281
+          },
+          "LayerCAM_layer4": {
+            "spearman_with_original": 0.5571121674587707,
+            "mean_absolute_score_difference": 0.02284229555894536,
+            "median_absolute_score_difference": 0.008975619369568855,
+            "p95_absolute_score_difference": 0.08172771188702406,
+            "maximum_absolute_score_difference": 0.6646571409517915
+          },
+          "LayerCAM_layer3_0": {
+            "spearman_with_original": 0.446481098748446,
+            "mean_absolute_score_difference": 0.025870335461319515,
+            "median_absolute_score_difference": 0.017072304940905694,
+            "p95_absolute_score_difference": 0.06572881521894357,
+            "maximum_absolute_score_difference": 0.6460563700193808
+          }
+        }
+      }
+    },
+    "consistent_pair_identity_checks": 4300
+  }
+}

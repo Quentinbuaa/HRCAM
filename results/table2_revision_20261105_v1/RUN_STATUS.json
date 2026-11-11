@@ -1,0 +1,21 @@
+{
+  "state": "complete",
+  "started": 1793854293.0240092,
+  "completed_stages": [
+    "calculation",
+    "independent_audit",
+    "render"
+  ],
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "current_stage": "render",
+  "ended": 1793854304.1554453
+}

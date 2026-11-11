@@ -2,6 +2,21 @@
 
 This repository contains the analysis code and derived results for the H-RCAM manuscript prepared for *Entropy*. Original images and annotations are not redistributed. Obtain them from the providers of [Oxford-IIIT Pet](https://www.robots.ox.ac.uk/~vgg/data/pets/), [CUB-200-2011](https://www.vision.caltech.edu/datasets/cub_200_2011/), [Oxford Flowers-102](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/), [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02), [PASCAL VOC 2012](https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2012/), and [UECFoodPixComplete](https://mm.cs.uec.ac.jp/uecfoodpix/) as needed. UECFoodPixComplete permits non-commercial research use only; consult its provider's terms before obtaining it.
 
+## Revision release (11 November 2026)
+
+The completed first-round additions are indexed in [REVISION_RESULTS.md](REVISION_RESULTS.md):
+current Tables 2-5 and 7-9, Figure 5, DenseNet-121, photographic backgrounds,
+method/layer comparisons, target diagnostics, expanded baselines and confidence
+intervals. That index identifies the current outputs where archived filenames
+retain earlier table numbers. See it before using an older display file.
+
+Verify released cached scores with standard-library Python, without datasets,
+NumPy or a GPU:
+
+```bash
+python verify_revision_release.py
+```
+
 ## Contents
 
 - Root-level Python scripts implement data preparation, background replacement, attribution-map scoring, analysis, and table/figure generation. The principal entry points are `prepare_pets.py`, `prepare_cub.py`, `pets_experiment.py`, `cub_experiment.py`, `make_rq1_final_artifacts.py`, and `make_rq3_artifacts.py`.
@@ -22,11 +37,19 @@ This repository contains the analysis code and derived results for the H-RCAM ma
 | PASCAL VOC 2012, derived single-class task | 834 / 2502 | 0.8438 | 0.6661 | [Report](VOC2012_EXTERNAL_VALIDATION.md) |
 | UECFoodPixComplete, derived single-class task | 584 / 1752 | 0.7808 | 0.8351 | [Report](UECFOODPIX_EXTERNAL_VALIDATION.md) |
 
-The original Oxford-IIIT Pet and CUB-200-2011 datasets informed the choice of H-RCAM components and fusion. The four datasets above did not. The endpoint here is **change in the predicted label** under a foreground-preserving background replacement, not independently confirmed classification error. H-RCAM has the highest observed AUROC and AP among the nine individual comparison measures on all four, but the paired bootstrap AUROC advantage over JSD is not established on VOC 2012 or UECFoodPixComplete. AP values are not directly comparable across datasets with different positive-class prevalence. The VOC and UEC analyses use prespecified single-class subsets of segmentation datasets, not their full original tasks. See the reports and protocols before reusing these results.
+The original Oxford-IIIT Pet and CUB-200-2011 datasets informed the choice of H-RCAM components and fusion. The four datasets above did not. The endpoint here is **change in the predicted label** under a foreground-preserving background replacement, not independently confirmed classification error. In the expanded comparison with twelve individual measures (current Table 4), H-RCAM has the highest observed AP on all four datasets and AUROC on two. Its paired bootstrap AUROC advantage over JSD is not established on VOC 2012 or UECFoodPixComplete. AP values are not directly comparable across datasets with different positive-class prevalence. The VOC and UEC analyses use prespecified single-class subsets of segmentation datasets, not their full original tasks. See the reports and protocols before reusing these results.
 
 ## Attribution-target sensitivity (RQ3.3)
 
-The matched-pair comparison holds the classifier, inputs, background replacements, Grad-CAM procedure, and H-RCAM formula fixed while changing only the follow-up explanation target. Own-class H-RCAM AUROC/AP are 0.8953/0.6888 on Pet and 0.8067/0.8684 on matched CUB pairs; fixed-source values are 0.7973/0.5095 and 0.7658/0.8484. Prediction-consistent scores are identical under both conventions. The primary results therefore compare explanations of actual predictions, not isolated attribution instability for one fixed class. The diagnostic results also show that H-RCAM's primary ranking above JSD does not extend to fixed-source targeting. See the [RQ3.3 report and reproduction instructions](results/fixed_source_sensitivity_20261011_v1/README.md).
+The current three-convention comparison holds the classifier, inputs, probes,
+attribution procedure and H-RCAM formula fixed while comparing own-class,
+fixed-source and fixed-ground-truth targets. The last convention is a labelled
+evaluation diagnostic. Own-class AUROC/AP are 0.8953/0.6888 on Pet and
+0.8067/0.8684 on matched CUB pairs; fixed-source values are 0.7973/0.5095
+and 0.7658/0.8484. Own-class results explain actual decisions and depend on
+prediction-based target selection. See the [current Table 9 report](results/r2c3_fixed_gt_20261105_v1/README.md)
+and [target-switch diagnostics](results/r1c2_target_switch_20261105_v1/README.md).
+The earlier two-convention archive remains available for provenance.
 
 ## Environment and use
 

@@ -1,0 +1,13 @@
+{
+  "previous_summary_sha256": "04189440c9964aaddaae9df9043968f0cbaa90d9dd1bf958fc6d32cd69ee8b6e",
+  "datasets": {
+    "pets_v1": {
+      "score_file": "/home/dell/rcam_reproduction_20260911/runs/table3_revision_20261105_v1/pets_v1_scores.jsonl",
+      "score_sha256": "68e92118069a5f4fd0d12a04115dfe12adadfdb937cea0149ee881e199b7e624"
+    },
+    "cub_v1": {
+      "score_file": "/home/dell/rcam_reproduction_20260911/runs/table3_revision_20261105_v1/cub_v1_scores.jsonl",
+      "score_sha256": "ad5cd6595951b62b35f182fd90bff64d473af763e39ef94ae7f12bd5ee24c2cf"
+    }
+  }
+}

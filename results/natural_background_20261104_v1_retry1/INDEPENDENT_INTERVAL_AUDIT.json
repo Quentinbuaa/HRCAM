@@ -1,0 +1,8 @@
+{
+  "state": "passed",
+  "method": "Independent pure-Python grouped rank/count AUROC/AP with identical source draws",
+  "bootstrap_seed": 20261104,
+  "resamples_per_analysis": 1000,
+  "verified_intervals": 44,
+  "max_endpoint_error": 9.992007221626409e-16
+}

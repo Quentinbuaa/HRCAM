@@ -1,0 +1,16 @@
+{
+  "time": 1793868560.7617447,
+  "code_files": {
+    "PROTOCOL.md": "2218d1e092e7981837ca7097ce194c230b9fd1e219e9681ce06d650cdb645318",
+    "TABLE7_FIXTURE.json": "53a9ddc89eb7747e95d144de8bd2c59d4f3f463d74120d54668a303ff506a2b3",
+    "audit.py": "b138a0474349c03e8a239d5404209ba9ff36bdae3f05eaec6b8f375d2ad87633",
+    "calculate.py": "3c2feab9a831bfb95a60db6554ee625494de095d71360d852d9fabfe76f02784",
+    "collect.py": "f670e4850a8f692a2ba846f2fd20d9751acd132cc1598b0d231ee55410fbabdc",
+    "common.py": "b44a16321c06c04d599e440c8a734c66a1d9920e6c81fff886f9d38d79efada7",
+    "render_table.py": "3e819d9fb7c7d0e1b26ec521c21e3880d866030959f8925eb7f3bebb81493007",
+    "run_pipeline.py": "38b23c459f8b9e0d124b5c2f736c2773528a6ad873f5d951348e516e2721988c"
+  },
+  "scope": "Table7 paired uncertainty and original six-dataset component analysis",
+  "new_model_inference": false,
+  "manuscript_edited": false
+}

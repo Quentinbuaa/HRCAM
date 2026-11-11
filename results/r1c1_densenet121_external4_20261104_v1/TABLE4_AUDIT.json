@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "entries_checked": 80,
+  "maximum_independent_numerical_error": 9.992007221626409e-16,
+  "column_winners": {
+    "Oxford Flowers-102": {
+      "auroc": "H-RCAM",
+      "ap": "H-RCAM"
+    },
+    "Caltech-101": {
+      "auroc": "H-RCAM",
+      "ap": "H-RCAM"
+    },
+    "PASCAL VOC 2012": {
+      "auroc": "H-RCAM",
+      "ap": "H-RCAM"
+    },
+    "UECFoodPixComplete": {
+      "auroc": "H-RCAM",
+      "ap": "H-RCAM"
+    }
+  },
+  "downloaded_file_hashes_verified": true
+}

@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "bootstrap_AUROCs_reconstructed": 8000,
+  "intervals_independently_checked": 8,
+  "new_per_color_intervals": 6,
+  "pooled_replay_checks": 2,
+  "max_error": 0.0,
+  "method": "Replicated observations, ascending average-rank AUROC, scalar linear-interpolated percentiles",
+  "seconds": 5.936258554458618
+}

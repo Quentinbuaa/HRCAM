@@ -1,0 +1,14 @@
+{
+  "time": 1793851293.0745893,
+  "code_files": {
+    "PROTOCOL.md": "1eaa6c58fdba53210b95f5476fbc9728b599932d372608712445262d4a4222d8",
+    "audit.py": "97e8316b7ba24d3221158ea2711db90689e5a00c2f6d67a4f3587765ad496075",
+    "calculate.py": "9ee3ca5682fd582f02af26a67e5aaa15ef346d96c5451cf2722ae8c63b5d278b",
+    "common.py": "96d10c232edea25d53ca6872724ebb58dda2260c9060ac1cedca4b930c3b970d",
+    "render_table.py": "f8c150093f98e72e54c4576fc7c033770e17ed2be6a0477ae22a6f03e1804e68",
+    "run_pipeline.py": "147760e9c333ef8eda8746aea763c13e2c884bbaa6f786703b85c8adc9ed227d"
+  },
+  "scope": "Table 3 saved-map reanalysis only",
+  "new_model_inference": false,
+  "manuscript_edited": false
+}

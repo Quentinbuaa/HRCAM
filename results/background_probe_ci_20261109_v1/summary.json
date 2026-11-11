@@ -1,0 +1,126 @@
+{
+  "state": "complete_independently_audited",
+  "purpose": "Six missing per-color AUROC CIs for current Table7; cached scores only",
+  "new_model_inference": false,
+  "new_experiments": false,
+  "new_resampling": true,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "numerical_threads": 1,
+  "numpy": "2.3.4",
+  "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+  "new_intervals": 6,
+  "reused_intervals": 4,
+  "bootstrap": "1000 source-image draws with replacement; all within-probe pairs of a source retained; percentile 2.5/97.5; same draws across color probes and their aggregate",
+  "natural_ci_scope": "Existing fixed donor-selection/assignment protocol; no new donor assignments",
+  "datasets": {
+    "pets_v1": {
+      "sources": 993,
+      "pairs": 2979,
+      "bootstrap_seed": 20261011,
+      "resamples": 1000,
+      "pooled_Table3_interval_reproduced": true,
+      "results": {
+        "Black": {
+          "auroc": 0.8779329420495177,
+          "auroc_ci95": [
+            0.8497777945511447,
+            0.9063164560040069
+          ],
+          "origin": "new source-cluster bootstrap from cached Table3 scores"
+        },
+        "Gray": {
+          "auroc": 0.9125537212633876,
+          "auroc_ci95": [
+            0.887151671418419,
+            0.9357102378882973
+          ],
+          "origin": "new source-cluster bootstrap from cached Table3 scores"
+        },
+        "White": {
+          "auroc": 0.8988679492213061,
+          "auroc_ci95": [
+            0.8717903742774705,
+            0.9242700324934813
+          ],
+          "origin": "new source-cluster bootstrap from cached Table3 scores"
+        },
+        "Constant color": {
+          "auroc": 0.895304037841914,
+          "auroc_ci95": [
+            0.8753158133762595,
+            0.9154697112690974
+          ],
+          "origin": "reused Table3; exact replay verified"
+        },
+        "Natural": {
+          "auroc": 0.9019501380028053,
+          "auroc_ci95": [
+            0.8753256192577691,
+            0.9253438745717364
+          ],
+          "origin": "reused independently audited natural-background summary; fixed donor assignment"
+        }
+      }
+    },
+    "cub_v1": {
+      "sources": 963,
+      "pairs": 2889,
+      "bootstrap_seed": 20261011,
+      "resamples": 1000,
+      "pooled_Table3_interval_reproduced": true,
+      "results": {
+        "Black": {
+          "auroc": 0.7849704851997472,
+          "auroc_ci95": [
+            0.751742452301717,
+            0.8133787470547884
+          ],
+          "origin": "new source-cluster bootstrap from cached Table3 scores"
+        },
+        "Gray": {
+          "auroc": 0.8241387213935611,
+          "auroc_ci95": [
+            0.7959718803946311,
+            0.8486834694638808
+          ],
+          "origin": "new source-cluster bootstrap from cached Table3 scores"
+        },
+        "White": {
+          "auroc": 0.8030909796069305,
+          "auroc_ci95": [
+            0.7744175116522652,
+            0.8293801803224782
+          ],
+          "origin": "new source-cluster bootstrap from cached Table3 scores"
+        },
+        "Constant color": {
+          "auroc": 0.806606623947929,
+          "auroc_ci95": [
+            0.7843526307448068,
+            0.8259045921715192
+          ],
+          "origin": "reused Table3; exact replay verified"
+        },
+        "Natural": {
+          "auroc": 0.8185606685359282,
+          "auroc_ci95": [
+            0.7893519405966298,
+            0.8460066565153423
+          ],
+          "origin": "reused independently audited natural-background summary; fixed donor assignment"
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "rcam_reproduction/results/table3_revision_20261105_v1/summary.json": "f6b023a62c592ae226743c7ec3d0ceb952944b0c819212af54e3d0143433415e",
+    "rcam_reproduction/results/natural_background_20261104_v1_retry1/analysis/summary.json": "94418037405b00a5658118a0488cbc7cacda68cabf168f9867ba2f37de32da9f",
+    "rcam_reproduction/results/table3_revision_20261105_v1/pets_v1_scores.jsonl": "68e92118069a5f4fd0d12a04115dfe12adadfdb937cea0149ee881e199b7e624",
+    "rcam_reproduction/results/table3_revision_20261105_v1/cub_v1_scores.jsonl": "ad5cd6595951b62b35f182fd90bff64d473af763e39ef94ae7f12bd5ee24c2cf"
+  },
+  "seconds": 1.2602620124816895,
+  "audit_file": "INDEPENDENT_AUDIT.json"
+}

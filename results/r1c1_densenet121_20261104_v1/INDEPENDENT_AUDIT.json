@@ -1,0 +1,44 @@
+{
+  "state": "passed",
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "datasets": {
+    "pets_v1": {
+      "state": "passed",
+      "source_count": 999,
+      "record_count": 5994,
+      "official_pretrained_feature_tensors_equal": 725,
+      "replayed_sources": 16,
+      "replayed_pairs_per_target": 48,
+      "maximum_closed_form_map_error": 4.172325134277344e-07,
+      "maximum_independent_jsd_error": 5.551115123125783e-17,
+      "maximum_independent_ncd_error": 2.220446049250313e-16,
+      "all_point_estimates_reproduced": true,
+      "consistent_target_scores_identical": true,
+      "original_provenance_hashes_unchanged": true
+    },
+    "cub_v1": {
+      "state": "passed",
+      "source_count": 1000,
+      "record_count": 6000,
+      "official_pretrained_feature_tensors_equal": 725,
+      "replayed_sources": 16,
+      "replayed_pairs_per_target": 48,
+      "maximum_closed_form_map_error": 4.172325134277344e-07,
+      "maximum_independent_jsd_error": 8.326672684688674e-17,
+      "maximum_independent_ncd_error": 2.220446049250313e-16,
+      "all_point_estimates_reproduced": true,
+      "consistent_target_scores_identical": true,
+      "original_provenance_hashes_unchanged": true
+    }
+  },
+  "audit_script_sha256": "cde89bad458f81b84e8686aa04bec617b3d0137f7c8d116ca138f6a67fcfa7c8"
+}

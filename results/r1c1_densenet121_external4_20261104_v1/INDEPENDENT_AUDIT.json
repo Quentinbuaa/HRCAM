@@ -1,0 +1,72 @@
+{
+  "state": "passed",
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "datasets": {
+    "flowers102_external_v1": {
+      "state": "passed",
+      "source_count": 1020,
+      "record_count": 6120,
+      "official_pretrained_feature_tensors_equal": 725,
+      "replayed_sources": 16,
+      "replayed_pairs_per_target": 48,
+      "maximum_closed_form_map_error": 4.76837158203125e-07,
+      "maximum_independent_jsd_error": 8.326672684688674e-17,
+      "maximum_independent_ncd_error": 2.220446049250313e-16,
+      "all_point_estimates_reproduced": true,
+      "consistent_target_scores_identical": true,
+      "original_provenance_hashes_unchanged": true
+    },
+    "caltech101_external_v1": {
+      "state": "passed",
+      "source_count": 1010,
+      "record_count": 6060,
+      "official_pretrained_feature_tensors_equal": 725,
+      "replayed_sources": 16,
+      "replayed_pairs_per_target": 48,
+      "maximum_closed_form_map_error": 4.76837158203125e-07,
+      "maximum_independent_jsd_error": 8.326672684688674e-17,
+      "maximum_independent_ncd_error": 1.6653345369377348e-16,
+      "all_point_estimates_reproduced": true,
+      "consistent_target_scores_identical": true,
+      "original_provenance_hashes_unchanged": true
+    },
+    "voc2012_external_v1": {
+      "state": "passed",
+      "source_count": 927,
+      "record_count": 5562,
+      "official_pretrained_feature_tensors_equal": 725,
+      "replayed_sources": 16,
+      "replayed_pairs_per_target": 48,
+      "maximum_closed_form_map_error": 4.76837158203125e-07,
+      "maximum_independent_jsd_error": 1.1102230246251565e-16,
+      "maximum_independent_ncd_error": 1.6653345369377348e-16,
+      "all_point_estimates_reproduced": true,
+      "consistent_target_scores_identical": true,
+      "original_provenance_hashes_unchanged": true
+    },
+    "uecfoodpix_external_v1": {
+      "state": "passed",
+      "source_count": 586,
+      "record_count": 3516,
+      "official_pretrained_feature_tensors_equal": 725,
+      "replayed_sources": 16,
+      "replayed_pairs_per_target": 48,
+      "maximum_closed_form_map_error": 5.364418029785156e-07,
+      "maximum_independent_jsd_error": 1.1102230246251565e-16,
+      "maximum_independent_ncd_error": 2.220446049250313e-16,
+      "all_point_estimates_reproduced": true,
+      "consistent_target_scores_identical": true,
+      "original_provenance_hashes_unchanged": true
+    }
+  },
+  "audit_script_sha256": "91144887ca8d87e25f292539f90980fb8599f5af7241ba678b1ff13da68e4b02"
+}

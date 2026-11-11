@@ -1,0 +1,25 @@
+{
+  "time": 1793849559.6045415,
+  "protocol_sha256": "5bb21c0f4c2d4176670c1bcf3a1353b87b0b74065b2ee333f7755c4dcaef5a4a",
+  "code_files": {
+    "PROTOCOL.md": "5bb21c0f4c2d4176670c1bcf3a1353b87b0b74065b2ee333f7755c4dcaef5a4a",
+    "analyze_results.py": "bbbfc510f03fad333cbcf134a62c1d02a178fea9c578e2cf4e653948acada7d9",
+    "audit_results.py": "9a623106baadada4e79ccf9c9d58bfbac5ef69eba6b62931324158f7ca768d75",
+    "common.py": "34b334e2c0193a1b58845d8190590ab0f78513594296e3a7c7dd80a221362959",
+    "make_report.py": "2d11405d312057d4a6c4389657e397ff0e498a0a5ad05953719fd255f05d95c0",
+    "run_extraction.py": "22c41a1e1212eedbad206dc3b7150e85973bea53fd582350c881aa94e3793b1d",
+    "run_pipeline.py": "f97d6519c1f46ea789f6b9f6fb919da96d48db077a9c0645384dda3b3bc17f4a"
+  },
+  "cpu_affinity": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "scope": "Prespecified Grad-CAM/LayerCAM x layer4/layer3[0] comparison only",
+  "manuscript_edited": false
+}

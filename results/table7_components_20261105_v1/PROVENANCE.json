@@ -1,0 +1,26 @@
+{
+  "pets_v1": {
+    "source": "/home/dell/rcam_reproduction_20260911/runs/table3_revision_20261105_v1/pets_v1_scores.jsonl",
+    "sha256": "68e92118069a5f4fd0d12a04115dfe12adadfdb937cea0149ee881e199b7e624"
+  },
+  "cub_v1": {
+    "source": "/home/dell/rcam_reproduction_20260911/runs/table3_revision_20261105_v1/cub_v1_scores.jsonl",
+    "sha256": "ad5cd6595951b62b35f182fd90bff64d473af763e39ef94ae7f12bd5ee24c2cf"
+  },
+  "flowers102_external_v1": {
+    "source": "/home/dell/rcam_reproduction_20260911/runs/table_layouts_baselines_20261105_v1_retry1/resnet18__flowers102_external_v1_scores.jsonl",
+    "sha256": "e979d1d8fc6a171872dafe3deaf0b1404ffc5d837bccc2d76f9c88dac9c1b3f8"
+  },
+  "caltech101_external_v1": {
+    "source": "/home/dell/rcam_reproduction_20260911/runs/table_layouts_baselines_20261105_v1_retry1/resnet18__caltech101_external_v1_scores.jsonl",
+    "sha256": "5c6dacbf8c578daf589f240d30951ff3ce621a19412f01780a26758227c7aa2c"
+  },
+  "voc2012_external_v1": {
+    "source": "/home/dell/rcam_reproduction_20260911/runs/table_layouts_baselines_20261105_v1_retry1/resnet18__voc2012_external_v1_scores.jsonl",
+    "sha256": "12609867b45f0bb9f19668432117aed7fe67d0ec06836a3d4ad212ce9399b0b3"
+  },
+  "uecfoodpix_external_v1": {
+    "source": "/home/dell/rcam_reproduction_20260911/runs/table_layouts_baselines_20261105_v1_retry1/resnet18__uecfoodpix_external_v1_scores.jsonl",
+    "sha256": "5eb2bc27eaaf118d6e9adaa205161e9e2b211167257f59f79feef60ca2609537"
+  }
+}

@@ -1,2 +1,19 @@
-# Preserve the exact Linux analysis-script bytes recorded in summary.json.
-fixed_source_sensitivity.py text eol=lf
+# Frozen revision artifacts retain exact bytes for SHA-256 verification.
+/results/background_probe_ci_20261109_v1/** -text
+/results/natural_background_20261104_v1_retry1/** -text
+/results/r1c1_densenet121_20261104_v1/** -text
+/results/r1c1_densenet121_external4_20261104_v1/** -text
+/results/r1c2_target_switch_20261105_v1/** -text
+/results/r1c6_method_layer_20261105_v1/** -text
+/results/r2c3_fixed_gt_20261105_v1/** -text
+/results/table2_mean_ci_20261105_v1/** -text
+/results/table2_revision_20261105_v1/** -text
+/results/table3_revision_20261105_v1/** -text
+/results/table7_components_20261105_v1/** -text
+/results/table_layouts_baselines_20261105_v1_retry1/** -text
+
+/REVISION_RELEASE_MANIFEST.json text eol=lf
+/REVISION_RESULTS.md text eol=lf
+/verify_revision_release.py text eol=lf
+/README.md text eol=lf
+/.gitattributes text eol=lf

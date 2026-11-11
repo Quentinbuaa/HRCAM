@@ -1,0 +1,170 @@
+{
+  "source_file": "Entropy-latest/Table2_GroupDivergence.tex",
+  "source_sha256": "6985c6eb1d0d665f09ebdb760d674bd716b944c804d8adb2881c7571dd8ac6b3",
+  "datasets": {
+    "pets_v1": {
+      "CD": {
+        "delta_median": 0.1881,
+        "delta_mean": 0.2037,
+        "delta_max": 0.1673,
+        "delta_min": 0.0077,
+        "U": 233609.0,
+        "A_U": 0.7998
+      },
+      "KLD": {
+        "delta_median": 0.0496,
+        "delta_mean": 0.089,
+        "delta_max": 0.2265,
+        "delta_min": 0.0047,
+        "U": 215960.0,
+        "A_U": 0.8149
+      },
+      "SNO": {
+        "delta_median": 0.2563,
+        "delta_mean": 0.2642,
+        "delta_max": 0.0717,
+        "delta_min": 0.028,
+        "U": 171678.5,
+        "A_U": 0.8529
+      },
+      "NCD": {
+        "delta_median": 0.0332,
+        "delta_mean": 0.0565,
+        "delta_max": 0.3047,
+        "delta_min": 0.0018,
+        "U": 138146.0,
+        "A_U": 0.8816
+      },
+      "JSD": {
+        "delta_median": 0.0266,
+        "delta_mean": 0.0334,
+        "delta_max": 0.1092,
+        "delta_min": 0.0036,
+        "U": 142564.0,
+        "A_U": 0.8778
+      },
+      "BAT": {
+        "delta_median": 0.0222,
+        "delta_mean": 0.0245,
+        "delta_max": 0.0602,
+        "delta_min": 0.0048,
+        "U": 252924.0,
+        "A_U": 0.7833
+      },
+      "SpatialW1": {
+        "delta_median": 0.0265,
+        "delta_mean": 0.0282,
+        "delta_max": 0.0486,
+        "delta_min": 0.0053,
+        "U": 177088.0,
+        "A_U": 0.8482
+      },
+      "FAS": {
+        "delta_median": 0.0138,
+        "delta_mean": 0.0207,
+        "delta_max": 0.0771,
+        "delta_min": 0.0001,
+        "U": 423922.0,
+        "A_U": 0.6367
+      },
+      "BAI": {
+        "delta_median": 0.0,
+        "delta_mean": 0.0109,
+        "delta_max": 0.0895,
+        "delta_min": 0.0,
+        "U": 491301.0,
+        "A_U": 0.579
+      },
+      "H-RCAM": {
+        "delta_median": 0.0288,
+        "delta_mean": 0.0408,
+        "delta_max": 0.1253,
+        "delta_min": 0.0024,
+        "U": 122176.0,
+        "A_U": 0.8953
+      }
+    },
+    "cub_v1": {
+      "CD": {
+        "delta_median": 0.0807,
+        "delta_mean": 0.0852,
+        "delta_max": 0.2526,
+        "delta_min": 0.0,
+        "U": 579456.5,
+        "A_U": 0.7012
+      },
+      "KLD": {
+        "delta_median": 0.0089,
+        "delta_mean": 0.012,
+        "delta_max": 0.1317,
+        "delta_min": 0.0007,
+        "U": 665592.0,
+        "A_U": 0.6568
+      },
+      "SNO": {
+        "delta_median": 0.1217,
+        "delta_mean": 0.1322,
+        "delta_max": 0.1379,
+        "delta_min": 0.007,
+        "U": 464918.0,
+        "A_U": 0.7603
+      },
+      "NCD": {
+        "delta_median": 0.0215,
+        "delta_mean": 0.0334,
+        "delta_max": 0.2721,
+        "delta_min": 0.0007,
+        "U": 399640.0,
+        "A_U": 0.7939
+      },
+      "JSD": {
+        "delta_median": 0.0186,
+        "delta_mean": 0.0215,
+        "delta_max": 0.0678,
+        "delta_min": 0.002,
+        "U": 427416.0,
+        "A_U": 0.7796
+      },
+      "BAT": {
+        "delta_median": 0.0123,
+        "delta_mean": 0.0141,
+        "delta_max": 0.0202,
+        "delta_min": -0.0005,
+        "U": 608038.0,
+        "A_U": 0.6865
+      },
+      "SpatialW1": {
+        "delta_median": 0.0157,
+        "delta_mean": 0.0174,
+        "delta_max": 0.0463,
+        "delta_min": 0.0006,
+        "U": 490839.0,
+        "A_U": 0.7469
+      },
+      "FAS": {
+        "delta_median": 0.0083,
+        "delta_mean": 0.0108,
+        "delta_max": -0.0104,
+        "delta_min": -0.0,
+        "U": 794068.0,
+        "A_U": 0.5906
+      },
+      "BAI": {
+        "delta_median": 0.0,
+        "delta_mean": 0.0046,
+        "delta_max": 0.0893,
+        "delta_min": 0.0,
+        "U": 883790.0,
+        "A_U": 0.5443
+      },
+      "H-RCAM": {
+        "delta_median": 0.0198,
+        "delta_mean": 0.0261,
+        "delta_max": 0.1167,
+        "delta_min": 0.0017,
+        "U": 375088.0,
+        "A_U": 0.8066
+      }
+    }
+  }
+}
