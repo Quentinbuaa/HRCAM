@@ -151,6 +151,18 @@ def main():
         equal(len(records), expected['three_way_common']['n_pairs'], 'pair_counts', 0)
         check_ranking(records, expected['three_way_common']['ranking'])
 
+    final_target_run = 'own_ground_truth_baselines_20261120_v1_retry1'
+    summary = read(RESULTS / final_target_run / 'summary.json')
+    for dataset, expected in summary['datasets'].items():
+        records = rows(final_target_run, dataset + '_scores.jsonl')
+        equal(len(records), expected['pairs'], 'pair_counts', 0)
+        equal(len({r['source_id'] for r in records}), expected['sources'], 'source_counts', 0)
+        equal(sum(r['inconsistent'] for r in records), expected['inconsistent_pairs'], 'inconsistent_counts', 0)
+        assert len({(r['source_id'], r['background']) for r in records}) == len(records)
+        for mode, target in expected['targets'].items():
+            ranked = [{**row['scores'][mode], 'inconsistent': row['inconsistent']} for row in records]
+            check_ranking(ranked, target['ranking'])
+
     natural_run = 'natural_background_20261104_v1_retry1'
     for dataset, expected in read(RESULTS / natural_run / 'analysis/summary.json').items():
         records = rows(natural_run, 'analysis/' + dataset + '_scores.jsonl')

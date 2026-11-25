@@ -9,6 +9,7 @@ fixed_source_sensitivity.py text eol=lf
 /results/r1c2_target_switch_20261105_v1/** -text
 /results/r1c6_method_layer_20261105_v1/** -text
 /results/r2c3_fixed_gt_20261105_v1/** -text
+/results/own_ground_truth_baselines_20261120_v1_retry1/** -text
 /results/table2_mean_ci_20261105_v1/** -text
 /results/table2_revision_20261105_v1/** -text
 /results/table3_revision_20261105_v1/** -text

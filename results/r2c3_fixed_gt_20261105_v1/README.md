@@ -1,6 +1,6 @@
 # R2C3: fixed-ground-truth diagnostic
 
-**Completed and independently audited. Current manuscript: RQ3.3 / Table 9.**
+**Completed and independently audited three-convention analysis.** [Final Table 9](../own_ground_truth_baselines_20261120_v1_retry1/README.md) uses the two-convention valid set.
 
 Original fitted ResNet-18 models, original Pet/CUB source identities and masks, and the same black/gray/white replacement probes. No training, component selection, recalibration, natural-background extension, or R1C2/R1C3 additional study was performed in this run.
 
@@ -33,7 +33,7 @@ Oxford-IIIT Pet: the original own/fixed-source matched set has 2979 pairs. The t
 
 CUB-200-2011: the original own/fixed-source matched set has 2887 pairs. The three-way comparison excludes another 0 pairs (0 consistent, 0 inconsistent).
 
-Current Table 9 recomputes every convention on the three-way intersection. Table 3 retains its own-class valid set; the matched CUB comparison excludes two invalid fixed-source pairs. Convention-specific all-valid estimates and the original two-way Table 8 reproduction are preserved in [summary.json](analysis/summary.json).
+This archived comparison recomputes every convention on the three-way intersection. Table 3 retains its own-class valid set; the matched CUB comparison excludes two invalid fixed-source pairs. Convention-specific all-valid estimates and the original two-way Table 8 reproduction are preserved in [summary.json](analysis/summary.json).
 
 ## H-RCAM confidence intervals on the three-way common set
 

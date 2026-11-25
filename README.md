@@ -2,9 +2,9 @@
 
 This repository contains the analysis code and derived results for the H-RCAM manuscript prepared for *Entropy*. Original images and annotations are not redistributed. Obtain them from the providers of [Oxford-IIIT Pet](https://www.robots.ox.ac.uk/~vgg/data/pets/), [CUB-200-2011](https://www.vision.caltech.edu/datasets/cub_200_2011/), [Oxford Flowers-102](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/), [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02), [PASCAL VOC 2012](https://www.robots.ox.ac.uk/~vgg/projects/pascal/VOC/voc2012/), and [UECFoodPixComplete](https://mm.cs.uec.ac.jp/uecfoodpix/) as needed. UECFoodPixComplete permits non-commercial research use only; consult its provider's terms before obtaining it.
 
-## Revision release (11 November 2026)
+## Revision release
 
-The completed first-round additions are indexed in [REVISION_RESULTS.md](REVISION_RESULTS.md):
+The completed revision analyses are indexed in [REVISION_RESULTS.md](REVISION_RESULTS.md):
 current Tables 2-5 and 7-9, Figure 5, DenseNet-121, photographic backgrounds,
 method/layer comparisons, target diagnostics, expanded baselines and confidence
 intervals. That index identifies the current outputs where archived filenames
@@ -41,15 +41,7 @@ The original Oxford-IIIT Pet and CUB-200-2011 datasets informed the choice of H-
 
 ## Attribution-target sensitivity (RQ3.3)
 
-The current three-convention comparison holds the classifier, inputs, probes,
-attribution procedure and H-RCAM formula fixed while comparing own-class,
-fixed-source and fixed-ground-truth targets. The last convention is a labelled
-evaluation diagnostic. Own-class AUROC/AP are 0.8953/0.6888 on Pet and
-0.8067/0.8684 on matched CUB pairs; fixed-source values are 0.7973/0.5095
-and 0.7658/0.8484. Own-class results explain actual decisions and depend on
-prediction-based target selection. See the [current Table 9 report](results/r2c3_fixed_gt_20261105_v1/README.md)
-and [target-switch diagnostics](results/r1c2_target_switch_20261105_v1/README.md).
-The earlier two-convention archive remains available for provenance.
+[Final Table 9](results/own_ground_truth_baselines_20261120_v1_retry1/README.md) compares own-predicted-class and fixed-ground-truth Grad-CAM on 2979 Pet pairs and 2889 CUB pairs. The classifier, inputs, probes and H-RCAM formula are fixed across the two conventions. The [earlier three-convention diagnostic](results/r2c3_fixed_gt_20261105_v1/README.md) and [target-switch analysis](results/r1c2_target_switch_20261105_v1/README.md) remain available for provenance.
 
 ## Environment and use
 

@@ -1,6 +1,6 @@
 {
-  "release_date": "2026-11-11",
-  "scope": "Previously completed derived results and frozen computation code; no new experiments.",
+  "release_date": "2026-11-25",
+  "scope": "Previously completed derived results and frozen computation code, including the final Table 9 score release; no new experiments.",
   "files": {
     "results/table2_revision_20261105_v1/code/audit.py": {
       "bytes": 3311,
@@ -708,9 +708,8 @@
       "sha256": "22f0159ca15abd2ab624a704768fbb7b630ad955608b91153f0eab5b305e635f"
     },
     "results/r2c3_fixed_gt_20261105_v1/README.md": {
-      "bytes": 6553,
-      "sha256": "c898ea065b1a9d3fed35afa12969ad011abb44e8fbcca00bc0df893d037b8966",
-      "frozen_source_sha256": "c2a52866f14ed7cb84151c9e6c893a5ec83117e2a4b3a7b17f7a6d6b051984b9"
+      "bytes": 6662,
+      "sha256": "3b5289e1222237c933d2918ea202a76d958736c8736f4aa5d197ae919a23ce03"
     },
     "results/r2c3_fixed_gt_20261105_v1/table8_three_conventions_with_ci.csv": {
       "bytes": 937,
@@ -938,12 +937,29 @@
     "results/table3_revision_20261105_v1/README.md": {
       "bytes": 672,
       "sha256": "3336fabf3f585df1bc7900a54ad28921440f9ea2425d816a2fb47b1d1555fee9"
+    },
+    "results/own_ground_truth_baselines_20261120_v1_retry1/summary.json": {
+      "bytes": 53646,
+      "sha256": "f5968ef4e88de88b8194954f668fe254c4bb82012ecbfb1b5a5d58858222d945"
+    },
+    "results/own_ground_truth_baselines_20261120_v1_retry1/pets_v1_scores.jsonl": {
+      "bytes": 2474595,
+      "sha256": "ed3d205822ca4d50bb453affdd98f94d1f1c4da3ca0d3bc221281bd402ce7402"
+    },
+    "results/own_ground_truth_baselines_20261120_v1_retry1/cub_v1_scores.jsonl": {
+      "bytes": 2384379,
+      "sha256": "e0b84ef99a08d10a93fbfbdb72f98656caf027a7b0a1fe868c9888e25554c06e"
+    },
+    "results/own_ground_truth_baselines_20261120_v1_retry1/README.md": {
+      "bytes": 1165,
+      "sha256": "be2bf0d9a77d6b76bec317bb749db8858d4168e78f79f79c5f7e9e03a658d414"
     }
   },
   "numeric_data_and_scientific_code_unchanged": true,
   "public_readme_updates": [
     "results/background_probe_ci_20261109_v1/README.md",
     "results/natural_background_20261104_v1_retry1/README.md",
+    "results/own_ground_truth_baselines_20261120_v1_retry1/README.md",
     "results/r1c1_densenet121_external4_20261104_v1/README.md",
     "results/r1c6_method_layer_20261105_v1/README.md",
     "results/r2c3_fixed_gt_20261105_v1/README.md",

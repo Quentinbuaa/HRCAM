@@ -1,4 +1,4 @@
-# First-round revision: result and code index
+# Revision results and code
 
 This release archives completed analyses; publishing it did not run new
 experiments. Original datasets, masks, donor photographs, model checkpoints
@@ -21,7 +21,7 @@ All paths below are relative to `results/`.
 | Photographic-background experiment | `natural_background_20261104_v1_retry1/` | `analysis/summary.json`, cached scores, donor-assignment identifiers |
 | Table 8 / RQ3.2, fusion rules | `table7_components_20261105_v1/` | `Table7_with_ci.csv`, `fusion_summary.json` |
 | Figure 5 and q/R diagnostics | Same components directory | `component_summary.json`, correlation/ratio CSVs, `presentation_v2/` plot and code |
-| Table 9 / RQ3.3, target conventions | `r2c3_fixed_gt_20261105_v1/` | `table8_three_conventions_with_ci.csv`, `analysis/summary.json` and common scores |
+| Table 9 / RQ3.3, own-predicted and fixed ground-truth targets | [own_ground_truth_baselines_20261120_v1_retry1/](results/own_ground_truth_baselines_20261120_v1_retry1/README.md) | [Summary](results/own_ground_truth_baselines_20261120_v1_retry1/summary.json) and two score JSONLs |
 | Target-switch analysis, RQ3.3 | `r1c2_target_switch_20261105_v1/` | `summary.json`, diagnostic JSONLs, rank/component CSVs |
 | Method/layer experiment, Discussion | `r1c6_method_layer_20261105_v1/` | `README.md`, `table_with_ci.csv`, `analysis/summary.json`, common scores |
 
@@ -31,8 +31,8 @@ in `r1c1_densenet121_20261104_v1/` (Pet/CUB) and
 The expanded comparisons above supply the current rankings; earlier compact
 baseline displays are retained only as intermediate computation artifacts.
 `table2_revision_20261105_v1/` contains inputs to the final mean-CI extension,
-not a competing final table. Legacy `Table7` and `table8` filenames in the
-fusion and target runs correspond to current Tables 8 and 9, respectively.
+not a competing final table. The fusion output retains its earlier Table7
+filename. The [archived three-convention target analysis](results/r2c3_fixed_gt_20261105_v1/README.md) used 2887 CUB pairs and is retained for provenance.
 
 ## Score-level verification
 
